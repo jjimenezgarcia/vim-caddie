@@ -1,0 +1,29 @@
+{
+  "id": "jump-to-last-line",
+  "title": "Last Line, Please",
+  "description": "Learn how to jump straight to the last line of a file.",
+  "par": 1,
+  "ideal_keystrokes": "G",
+  "workspace": {
+    "log.txt": "first\nsecond\nthird\nfourth\n"
+  },
+  "open_file": "log.txt",
+  "success": {
+    "type": "cursor_at",
+    "line": 4,
+    "col": 1
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-file-start-end"
+  ],
+  "objective": [
+    "Reach the very last line of the file — no scrolling needed."
+  ]
+}

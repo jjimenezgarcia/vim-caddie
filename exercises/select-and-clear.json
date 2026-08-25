@@ -1,0 +1,33 @@
+{
+  "id": "select-and-clear",
+  "title": "Select and Clear",
+  "description": "Learn how to select exactly the text you want, then act on it.",
+  "par": 19,
+  "ideal_keystrokes": "wv5edj0wv5edj0wv5ed",
+  "workspace": {
+    "story.txt": "Keep this whole middle part gone please\nSave that entire extra silly stuff now\nHold what other stray weird items go\n"
+  },
+  "open_file": "story.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "story.txt",
+    "content": "Keep  please\nSave  now\nHold  go\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-visual-mode"
+  ],
+  "objective": [
+    "Select the unwanted middle stretch of each line by eye.",
+    "Delete the whole selection at once."
+  ],
+  "prerequisites": [
+    "fix-the-typo"
+  ]
+}

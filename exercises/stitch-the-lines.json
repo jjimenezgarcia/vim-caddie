@@ -1,0 +1,29 @@
+{
+  "id": "stitch-the-lines",
+  "title": "Stitch the Lines",
+  "description": "Learn how to join a line with the one below it.",
+  "par": 15,
+  "ideal_keystrokes": "JjJjJjJjJjJjJjJ",
+  "workspace": {
+    "split.txt": "part1\npart2\npart3\npart4\npart5\npart6\npart7\npart8\npart9\npart10\npart11\npart12\npart13\npart14\npart15\npart16\n"
+  },
+  "open_file": "split.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "split.txt",
+    "content": "part1 part2\npart3 part4\npart5 part6\npart7 part8\npart9 part10\npart11 part12\npart13 part14\npart15 part16\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-join-lines"
+  ],
+  "objective": [
+    "Each pair of lines belongs on one line — join them, all the way down the file."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "delete-a-character",
+  "title": "One Too Many",
+  "description": "Learn how to delete a single character without touching anything else.",
+  "par": 1,
+  "ideal_keystrokes": "x",
+  "workspace": {
+    "line.txt": "Hellxo\n"
+  },
+  "open_file": "line.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "line.txt",
+    "content": "Hello\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 5
+  },
+  "related_theory": [
+    "vim-delete-character"
+  ],
+  "objective": [
+    "Find the extra character that doesn't belong.",
+    "Remove exactly that one character."
+  ]
+}

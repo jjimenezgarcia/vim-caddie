@@ -1,0 +1,34 @@
+{
+  "id": "jump-between-files",
+  "title": "Jump Between Files",
+  "description": "Learn how to bookmark a spot in one file and jump straight to it from another.",
+  "par": 104,
+  "workspace": {
+    "main.txt": "PLACEHOLDER0\nPLACEHOLDER1\nPLACEHOLDER2\nPLACEHOLDER3\n",
+    "data.txt": "value0\nvlaue1\nvalue2\nvalue3\n"
+  },
+  "open_file": "main.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "main.txt",
+    "content": "value0\nvalue1\nvalue2\nvalue3\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-global-marks"
+  ],
+  "objective": [
+    "The first value is a straightforward fetch — bookmark, jump, copy, return.",
+    "The second value's source has a typo — fix it before you bring it back.",
+    "The last two values live one visit apart — grab both into separate registers before making the return trip."
+  ],
+  "prerequisites": [
+    "mark-your-spot"
+  ]
+}

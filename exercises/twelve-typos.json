@@ -1,0 +1,30 @@
+{
+  "id": "twelve-typos",
+  "title": "Sixteen Typos",
+  "description": "No hints -- fix every typo, file-wide.",
+  "par": 372,
+  "workspace": {
+    "draft.txt": "teh word here\nanother teh spot\nteh again\nrecieve word here\nanother recieve spot\nrecieve again\nadress word here\nanother adress spot\nadress again\noccured word here\nanother occured spot\noccured again\nseperate word here\nanother seperate spot\nseperate again\ndefinately word here\nanother definately spot\ndefinately again\nwich word here\nanother wich spot\nwich again\nthier word here\nanother thier spot\nthier again\nbecuase word here\nanother becuase spot\nbecuase again\nneccessary word here\nanother neccessary spot\nneccessary again\nacheive word here\nanother acheive spot\nacheive again\nbegining word here\nanother begining spot\nbegining again\ngoverment word here\nanother goverment spot\ngoverment again\nindependant word here\nanother independant spot\nindependant again\nexistance word here\nanother existance spot\nexistance again\npublically word here\nanother publically spot\npublically again\n"
+  },
+  "open_file": "draft.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "draft.txt",
+    "content": "the word here\nanother the spot\nthe again\nreceive word here\nanother receive spot\nreceive again\naddress word here\nanother address spot\naddress again\noccurred word here\nanother occurred spot\noccurred again\nseparate word here\nanother separate spot\nseparate again\ndefinitely word here\nanother definitely spot\ndefinitely again\nwhich word here\nanother which spot\nwhich again\ntheir word here\nanother their spot\ntheir again\nbecause word here\nanother because spot\nbecause again\nnecessary word here\nanother necessary spot\nnecessary again\nachieve word here\nanother achieve spot\nachieve again\nbeginning word here\nanother beginning spot\nbeginning again\ngovernment word here\nanother government spot\ngovernment again\nindependent word here\nanother independent spot\nindependent again\nexistence word here\nanother existence spot\nexistence again\npublicly word here\nanother publicly spot\npublicly again\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [],
+  "objective": [
+    "A dozen different typos are scattered throughout the file, each repeated a few times.",
+    "Fix every occurrence of each one, file-wide."
+  ],
+  "prerequisites": [
+    "proofread-the-file"
+  ]
+}

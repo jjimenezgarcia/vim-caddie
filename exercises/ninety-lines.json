@@ -1,0 +1,34 @@
+{
+  "id": "ninety-lines",
+  "title": "Nineteen Lines, Sorted",
+  "description": "No hints -- fix every line, then sort the whole thing.",
+  "par": 90,
+  "workspace": {
+    "words.txt": "word1 rest\nword2 rest\nword3 rest\nword4 rest\nword5 rest\nword6 rest\nword7 rest\nword8 rest\nword9 rest\nword10 rest\nword11 rest\nword12 rest\nword13 rest\nword14 rest\nword15 rest\nJUNK\nwrod16 rest\nword17 rest\nword18 rest\nwORD19 rest\n"
+  },
+  "open_file": "words.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "words.txt",
+    "content": "WORD1 rest\nWORD10 rest\nWORD11 rest\nWORD12 rest\nWORD13 rest\nWORD14 rest\nWORD15 rest\nWORD16 rest\nWORD17 rest\nWORD18 rest\nWORD2 rest\nWORD3 rest\nWORD4 rest\nWORD5 rest\nWORD6 rest\nWORD7 rest\nWORD8 rest\nWORD9 rest\nWord19 rest\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [],
+  "objective": [
+    "Every line's first word needs shouting -- fix the first one, then repeat the fix down most of the file.",
+    "One line doesn't belong at all -- clear it.",
+    "One line's first word is also misspelled -- fix the spelling before shouting it.",
+    "One line's first word is already partly shouted -- toggling its case gets it the rest of the way, not repeating the same fix.",
+    "Once every line is fixed, sort the whole thing."
+  ],
+  "prerequisites": [
+    "repeat-the-fix",
+    "sort-every-section"
+  ]
+}

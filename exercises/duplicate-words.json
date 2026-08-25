@@ -1,0 +1,33 @@
+{
+  "id": "duplicate-words",
+  "title": "Said It Twice",
+  "description": "Learn how to delete the word under the cursor, wherever inside it you happen to be.",
+  "par": 15,
+  "ideal_keystrokes": "dawjdawjdawjdaw",
+  "workspace": {
+    "lines.txt": "one one line\ntwo two line\nthree three line\nfour four line\n"
+  },
+  "open_file": "lines.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "lines.txt",
+    "content": "one line\ntwo line\nthree line\nfour line\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 2
+  },
+  "related_theory": [
+    "vim-word-text-objects"
+  ],
+  "objective": [
+    "Find each repeated word.",
+    "Remove the duplicate without needing to land exactly on its start."
+  ],
+  "prerequisites": [
+    "fix-the-typo"
+  ]
+}

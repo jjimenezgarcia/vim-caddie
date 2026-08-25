@@ -1,0 +1,33 @@
+{
+  "id": "chase-it-down",
+  "title": "Chase It Down",
+  "description": "Learn how to jump to the next occurrence of the word under the cursor.",
+  "par": 41,
+  "ideal_keystrokes": "*NciwFIX\u001bnciwFIX\u001bnciwFIX\u001bnciwFIX\u001bnciwFIX\u001b",
+  "workspace": {
+    "scatter.txt": "apple target stone\nstone target river\nriver target cloud\ncloud target ember\nember target grove\n"
+  },
+  "open_file": "scatter.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "scatter.txt",
+    "content": "apple FIX stone\nstone FIX river\nriver FIX cloud\ncloud FIX ember\nember FIX grove\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 7
+  },
+  "related_theory": [
+    "vim-search-word"
+  ],
+  "objective": [
+    "The same word is scattered through the file.",
+    "Jump to each occurrence without typing it out, and fix it."
+  ],
+  "prerequisites": [
+    "hunt-the-errors"
+  ]
+}

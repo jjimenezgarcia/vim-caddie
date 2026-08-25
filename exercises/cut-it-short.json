@@ -1,0 +1,33 @@
+{
+  "id": "cut-it-short",
+  "title": "Cut It Short",
+  "description": "Learn how to delete from the cursor to the end of the line in one move.",
+  "par": 18,
+  "ideal_keystrokes": "wDj0wDj0wDj0wDj0wD",
+  "workspace": {
+    "trim.txt": "good1 bad1\ngood2 bad2\ngood3 bad3\ngood4 bad4\ngood5 bad5\n"
+  },
+  "open_file": "trim.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "trim.txt",
+    "content": "good1 \ngood2 \ngood3 \ngood4 \ngood5 \n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-end-of-line-operators"
+  ],
+  "objective": [
+    "Each line has something unwanted trailing off the end.",
+    "Cut each one short, in a single move."
+  ],
+  "prerequisites": [
+    "jump-to-line-end"
+  ]
+}

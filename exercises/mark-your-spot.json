@@ -1,0 +1,34 @@
+{
+  "id": "mark-your-spot",
+  "title": "Mark Your Spot",
+  "description": "Learn how to bookmark a position and jump straight back to it.",
+  "par": 18,
+  "ideal_keystrokes": "ma12Gdwmb24Gdw`adw",
+  "workspace": {
+    "far.txt": "fixme1 rest\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfixme2 rest\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfixme3 rest\n"
+  },
+  "open_file": "far.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "far.txt",
+    "content": "rest\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nrest\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nfiller\nrest\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-marks"
+  ],
+  "objective": [
+    "Bookmark where you start.",
+    "Fix the two other spots further down the file.",
+    "Jump straight back and fix the first one."
+  ],
+  "prerequisites": [
+    "fix-the-typo"
+  ]
+}

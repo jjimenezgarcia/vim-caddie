@@ -1,0 +1,31 @@
+{
+  "id": "apple-hunt",
+  "title": "An Apple a Day",
+  "description": "Learn how to move quickly and keep going.",
+  "prerequisites": ["reach-the-x"],
+  "workspace": {
+    "grid.txt": "................\n................\n................\n................\n................\n................\n................\n................\n"
+  },
+  "open_file": "grid.txt",
+  "success": {
+    "type": "reach_markers",
+    "marker_char": "@",
+    "empty_char": ".",
+    "count": 8,
+    "respawn": true
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-hjkl-motions"
+  ],
+  "objective": [
+    "Collect each apple as it appears.",
+    "Keep going until you have got them all."
+  ]
+}

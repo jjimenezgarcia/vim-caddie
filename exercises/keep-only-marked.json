@@ -1,0 +1,34 @@
+{
+  "id": "keep-only-marked",
+  "title": "Keep Only What's Marked",
+  "description": "Learn how to delete every line that does *not* match a pattern.",
+  "par": 97,
+  "workspace": {
+    "messy.txt": "KEEP0-0\ndrop0-1\ndrop0-2\ndrop0-3\ndrop0-4\ndrop0-5\nKEEP1_TYPO-0\ndrop1-1\ndrop1-2\ndrop1-3\ndrop1-4\ndrop1-5\nKEEP2-0\ndrop2-1\ndrop2-2\ndrop2-3\ndrop2-4\ndrop2-5\nKEEP3-0\ndrop3-1\ndrop3-2\ndrop3-3\ndrop3-4\ndrop3-5\n"
+  },
+  "open_file": "messy.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "messy.txt",
+    "content": "KEEP0-0\nKEEP1-0\nKEEP2-0\nKEEP3-0\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-inverse-global"
+  ],
+  "objective": [
+    "The first section is ready to filter as-is.",
+    "The second's keeper is misspelled — filter by a different pattern, then fix it.",
+    "The third should be filtered using a range relative to where you are, not typed-out line numbers.",
+    "The fourth should be filtered by selecting the block visually first."
+  ],
+  "prerequisites": [
+    "fix-them-all"
+  ]
+}

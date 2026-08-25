@@ -1,0 +1,35 @@
+{
+  "id": "thirty-registers",
+  "title": "Eight Rounds, Eight Registers",
+  "description": "No hints -- clear the junk, then pull back what you kept, whatever register it takes.",
+  "par": 96,
+  "workspace": {
+    "stack.txt": "KEEP0\njunk0\nspot0\nKEEP1\njunk1a\njunk1b\nspot1\nKEEP2\njunk2\nspot2\nKEEP3\njunk3\nspot3\nKEEP4\njunk4\nspot4\nKEEP5\nspot5\nKEEP6\njunk6a\njunk6b\njunk6c\nspot6\nKEEP7\nnoise\nnoise\njunk7\nspot7 HERE\n"
+  },
+  "open_file": "stack.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "stack.txt",
+    "content": "spot0\nKEEP0\nspot1\nKEEP1\nspot2\nKEEP2\nspot3\nKEEP3\nspot4\nKEEP4\nKEEP5\nspot5 KEEP5\nspot6\nKEEP6\nnoise\nnoise\nspot7 HERE\nKEEP7\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [],
+  "objective": [
+    "The first group has one line worth keeping and one line of junk -- clear both, pull the kept line back.",
+    "The second has two lines of junk before the spot -- the kept line falls one register deeper.",
+    "The third works better with a named register than the numbered stack.",
+    "The fourth and fifth are identical -- record a macro on the fourth and replay it on the fifth.",
+    "The sixth doesn't need a new line at all -- pull the kept value straight into the spot's own line.",
+    "The seventh buries the kept line under three rounds of junk -- deeper still on the numbered stack.",
+    "The eighth's junk and spot aren't right next to the kept line -- search for each one."
+  ],
+  "prerequisites": [
+    "reach-back-a-register"
+  ]
+}

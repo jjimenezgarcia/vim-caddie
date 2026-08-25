@@ -1,0 +1,34 @@
+{
+  "id": "reflow-every-paragraph",
+  "title": "Reflow Every Paragraph",
+  "description": "Learn how to rewrap a paragraph to a fixed width in one move.",
+  "par": 55,
+  "workspace": {
+    "prose.txt": "word word word word word word word word word word word word\n\nword word XXXX word word word word word word word word word\n\nword word word word word word word word word word word word\n\nword word word word word word word word word word word word\n\nword word word word word word word word word word word word\n\n\n\nword word word word word word word word word word word word\n\n"
+  },
+  "open_file": "prose.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "prose.txt",
+    "content": "word word word word\nword word word word\nword word word word\n\nword word word word\nword word word word\nword word word word\n\nword word word word\nword word word word\nword word word word\n\nword word word word\nword word word word\nword word word word\n\nword word word word\nword word word word\nword word word word\nword word word word\nword word word word\nword word word word\n\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-format-paragraph"
+  ],
+  "objective": [
+    "The first paragraph is ready to reflow as-is.",
+    "The second has a stray placeholder word — fix it first, then reflow.",
+    "The third and fourth are separate paragraphs — reflow both in one move by selecting them together.",
+    "The last one has been split by a run of stray blank lines that don't belong — remove them so it reflows as a single paragraph."
+  ],
+  "prerequisites": [
+    "trim-the-paragraphs"
+  ]
+}

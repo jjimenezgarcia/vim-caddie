@@ -1,0 +1,31 @@
+{
+  "id": "copy-and-paste",
+  "title": "Copy That",
+  "description": "Learn how to copy a line and paste it back into the file.",
+  "par": 3,
+  "ideal_keystrokes": "yyp",
+  "workspace": {
+    "duplicate.txt": "template\nsomething else\n"
+  },
+  "open_file": "duplicate.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "duplicate.txt",
+    "content": "template\ntemplate\nsomething else\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-line-operators",
+    "vim-paste"
+  ],
+  "objective": [
+    "Copy the first line.",
+    "Paste a copy of it right below."
+  ]
+}

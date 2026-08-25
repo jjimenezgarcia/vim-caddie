@@ -1,0 +1,30 @@
+{
+  "id": "a-dozen-tags",
+  "title": "Sixteen Tags",
+  "description": "No hints here -- figure out how to fix every tag, your way.",
+  "par": 318,
+  "workspace": {
+    "tags.txt": "TA zz4\nTA zz3\nTA zz2\nTA zz1\nTB zz4\nTB zz3\nTB zz2\nTB zz1\nTC zz4\nTC zz3\nTC zz2\nTC zz1\nTD zz4\nTD zz3\nTD zz2\nTD zz1\nTE zz4\nTE zz3\nTE zz2\nTE zz1\nTF zz4\nTF zz3\nTF zz2\nTF zz1\nTG zz4\nTG zz3\nTG zz2\nTG zz1\nTH zz4\nTH zz3\nTH zz2\nTH zz1\nTI zz4\nTI zz3\nTI zz2\nTI zz1\nTJ zz4\nTJ zz3\nTJ zz2\nTJ zz1\nTK zz4\nTK zz3\nTK zz2\nTK zz1\nTL zz4\nTL zz3\nTL zz2\nTL zz1\nTM zz4\nTM zz3\nTM zz2\nTM zz1\nTN zz4\nTN zz3\nTN zz2\nTN zz1\nTO zz4\nTO zz3\nTO zz2\nTO zz1\nTP zz4\nTP zz3\nTP zz2\nTP zz1\n"
+  },
+  "open_file": "tags.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "tags.txt",
+    "content": "zz4-x\nzz3-x\nzz2-x\nzz1-x\nzz4-y\nzz3-y\nzz2-y\nzz1-y\nZZ4\nZZ3\nZZ2\nZZ1\n\tzz4\n\tzz3\n\tzz2\n\tzz1\nQz4\nQz3\nQz2\nQz1\nzz4\nzz4\nzz3\nzz3\nzz2\nzz2\nzz1\nzz1\n> zz4\n> zz3\n> zz2\n> zz1\nzz4_end\nzz3_end\nzz2_end\nzz1_end\nzz4\nzz3\nzz2\nzz1\nz4\nz3\nz2\nz1\nzz4?\nzz3?\nzz2?\nzz1?\n# zz4\n# zz3\n# zz2\n# zz1\nzz4_m\nzz3_m\nzz2_m\nzz1_m\nzz4_n\nzz3_n\nzz2_n\nzz1_n\nZz4\nZz3\nZz2\nZz1\nzz4_p\nzz3_p\nzz2_p\nzz1_p\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [],
+  "objective": [
+    "Sixteen different tags, sixteen different fixes.",
+    "Clear every tag and apply its treatment, wherever it appears."
+  ],
+  "prerequisites": [
+    "fix-them-all"
+  ]
+}

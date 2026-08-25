@@ -1,0 +1,30 @@
+{
+  "id": "replace-a-character",
+  "title": "Just One Letter Off",
+  "description": "Learn how to replace a single character without entering insert mode.",
+  "par": 2,
+  "ideal_keystrokes": "ro",
+  "workspace": {
+    "sign.txt": "Warld\n"
+  },
+  "open_file": "sign.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "sign.txt",
+    "content": "World\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 2
+  },
+  "related_theory": [
+    "vim-replace-character"
+  ],
+  "objective": [
+    "Find the one wrong letter.",
+    "Replace it with the right one, in a single move."
+  ]
+}

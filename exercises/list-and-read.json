@@ -1,0 +1,31 @@
+{
+  "id": "list-and-read",
+  "title": "Follow the Clues",
+  "description": "Learn how to explore files and use what you find.",
+  "par": 34,
+  "ideal_keystrokes": ":!ls\r\r:!cat secret.txt\r\rciwvictory",
+  "workspace": {
+    "answer.txt": "REPLACE_ME\n",
+    "secret.txt": "victory\n"
+  },
+  "open_file": "answer.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "answer.txt",
+    "content": "victory\n"
+  },
+  "permissions": {
+    "commands": [
+      "ls",
+      "cat"
+    ]
+  },
+  "related_theory": [
+    "vim-shell-commands"
+  ],
+  "objective": [
+    "List what is in the current directory.",
+    "Read the file that looks suspicious.",
+    "Replace the placeholder with what you found inside it."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "delete-a-line",
+  "title": "Line Must Go",
+  "description": "Learn how to delete an entire line in a single move.",
+  "par": 2,
+  "ideal_keystrokes": "dd",
+  "workspace": {
+    "list.txt": "keep this\nDELETE THIS LINE\nkeep this too\n"
+  },
+  "open_file": "list.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "list.txt",
+    "content": "keep this\nkeep this too\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 2,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-line-operators"
+  ],
+  "objective": [
+    "Find the line that doesn't belong.",
+    "Delete the whole line in one move."
+  ]
+}

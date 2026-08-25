@@ -1,0 +1,30 @@
+{
+  "id": "fix-the-counters",
+  "title": "Fix the Counters",
+  "description": "Learn how to bump a number up or down without retyping it.",
+  "par": 49,
+  "ideal_keystrokes": "1\u0001j02\u0001j03\u0001j04\u0001j05\u0001j06\u0001j07\u0001j08\u0001j09\u0001j010\u0001j011\u0001j012\u0001",
+  "workspace": {
+    "counters.txt": "count: 5\ncount: 5\ncount: 5\ncount: 5\ncount: 5\ncount: 5\ncount: 5\ncount: 5\ncount: 5\ncount: 5\ncount: 5\ncount: 5\n"
+  },
+  "open_file": "counters.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "counters.txt",
+    "content": "count: 6\ncount: 7\ncount: 8\ncount: 9\ncount: 10\ncount: 11\ncount: 12\ncount: 13\ncount: 14\ncount: 15\ncount: 16\ncount: 17\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-increment-decrement"
+  ],
+  "objective": [
+    "Every counter needs to go up by a different amount.",
+    "Bump each one to its target value directly."
+  ]
+}

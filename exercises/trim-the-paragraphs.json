@@ -1,0 +1,39 @@
+{
+  "id": "trim-the-paragraphs",
+  "title": "Trim the Paragraphs",
+  "description": "Learn how to jump — or delete — by sentence, not just by word.",
+  "par": 45,
+  "ideal_keystrokes": "d)2j.2j)d$2j).2j/Bad5\rd)2jma2j`ad)2jd2)2jv)hd",
+  "workspace": {
+    "prose.txt": "Bad1 sentence here. Good1 sentence stays.\n\nBad2 sentence here. Good2 sentence stays.\n\nGood3 sentence stays. Bad3 sentence here.\n\nGood4 sentence stays. Bad4 sentence here.\n\nBad5 sentence here. Good5 sentence stays.\n\nBad6 sentence here. Good6 sentence stays.\n\nBad7a sentence. Bad7b sentence. Good7 sentence stays.\n\nBad8 sentence here. Good8 sentence stays.\n\n"
+  },
+  "open_file": "prose.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "prose.txt",
+    "content": "Good1 sentence stays.\n\nGood2 sentence stays.\n\nGood3 sentence stays. \n\nGood4 sentence stays. \n\nGood5 sentence stays.\n\nGood6 sentence stays.\n\nGood7 sentence stays.\n\nGood8 sentence stays.\n\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-paragraph-sentence-motions"
+  ],
+  "objective": [
+    "The first paragraph's bad sentence comes first — delete forward onto it.",
+    "The second is the same shape — repeat the change instead of redoing it.",
+    "The third's bad sentence is last instead of first.",
+    "The fourth is the same shape as the third — repeat that change instead.",
+    "The fifth is found by searching for it, not by counting lines.",
+    "The sixth — mark where it starts, glance ahead, then come back and remove it.",
+    "The seventh has two bad sentences in a row — remove both in one move.",
+    "The eighth — select it visually up to the next sentence, then remove it."
+  ],
+  "prerequisites": [
+    "fix-the-typo"
+  ]
+}

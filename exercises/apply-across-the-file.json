@@ -1,0 +1,32 @@
+{
+  "id": "apply-across-the-file",
+  "title": "Apply Across the File",
+  "description": "Learn how to run a normal-mode edit on every line matching a pattern.",
+  "par": 156,
+  "workspace": {
+    "tags.txt": "TAG1 item0\nTAG1 item1\nTAG1 item2\nTAG1 item3\nTAG1 item4\nTAG2 item0\nTAG2 item1\nTAG2 item2\nTAG2 item3\nTAG2 item4\nTAG3 item0\nTAG3 item1\nTAG3 item2\nTAG3 item3\nTAG3 item4\nTAG4 item0\nTAG4 item1\nTAG4 item2\nTAG4 item3\nTAG4 item4\nTAG5 item0\nTAG5 item1\nTAG5 item2\nTAG5 item3\nTAG5 item4\nTAG6 item0\nTAG6 item1\nTAG6 item2\nTAG6 item3\nTAG6 item4\nTAG7 item0\nTAG7 item1\nTAG7 item2\nTAG7 item3\nTAG7 item4\n"
+  },
+  "open_file": "tags.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "tags.txt",
+    "content": "item0!\nitem1!\nitem2!\nitem3!\nitem4!\n* item0\n* item1\n* item2\n* item3\n* item4\nITEM0\nITEM1\nITEM2\nITEM3\nITEM4\n\titem0\n\titem1\n\titem2\n\titem3\n\titem4\nFIXED\nFIXED\nFIXED\nFIXED\nFIXED\nXtem0\nXtem1\nXtem2\nXtem3\nXtem4\nitem0\nitem0\nitem1\nitem1\nitem2\nitem2\nitem3\nitem3\nitem4\nitem4\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-normal-over-range"
+  ],
+  "objective": [
+    "Seven different tags need seven different fixes, each applied everywhere that tag appears.",
+    "Strip the tag and apply the right treatment for each kind."
+  ],
+  "prerequisites": [
+    "fix-them-all"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "change-a-line",
+  "title": "Clean Slate",
+  "description": "Learn how to clear a line and start typing fresh, in one move.",
+  "par": 6,
+  "ideal_keystrokes": "ccnew\u001b",
+  "workspace": {
+    "note.txt": "old\nkeep this\n"
+  },
+  "open_file": "note.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "note.txt",
+    "content": "new\nkeep this\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-line-operators"
+  ],
+  "objective": [
+    "Replace the whole first line with new text.",
+    "Get back to normal mode when you're done."
+  ]
+}

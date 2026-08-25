@@ -1,0 +1,29 @@
+{
+  "id": "jump-to-line-end",
+  "title": "Straight to the End",
+  "description": "Learn how to jump straight to the end of a line, no matter how long it is.",
+  "par": 1,
+  "ideal_keystrokes": "$",
+  "workspace": {
+    "row.txt": "go--------here\n"
+  },
+  "open_file": "row.txt",
+  "success": {
+    "type": "cursor_at",
+    "line": 1,
+    "col": 14
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-line-start-end"
+  ],
+  "objective": [
+    "Reach the last character of the line — without counting keys."
+  ]
+}

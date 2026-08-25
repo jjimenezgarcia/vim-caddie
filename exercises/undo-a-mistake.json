@@ -1,0 +1,32 @@
+{
+  "id": "undo-a-mistake",
+  "title": "Second Thoughts",
+  "description": "Learn how to undo a change before moving on.",
+  "par": 6,
+  "ideal_keystrokes": "ddujdd",
+  "workspace": {
+    "todo3.txt": "one\ntwo\nthree\n"
+  },
+  "open_file": "todo3.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "todo3.txt",
+    "content": "one\ntwo\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 2,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-undo",
+    "vim-line-operators"
+  ],
+  "objective": [
+    "Delete the second line.",
+    "Realize that was the wrong one and undo it.",
+    "Delete the third line instead."
+  ]
+}

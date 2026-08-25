@@ -1,0 +1,35 @@
+{
+  "id": "number-every-list",
+  "title": "Number Every List",
+  "description": "Learn how to turn a column of identical values into a numbered sequence in one move.",
+  "par": 63,
+  "workspace": {
+    "lists.txt": "0\n0\n0\n0\n0\nWRONGTITLE\n0\n0\n0\n0\nJUNK\n0\n0\n0\n0\nJUNK1\nJUNK2\n0\n0\n0\n0\nlist header\n0\n0\n0\n0\n"
+  },
+  "open_file": "lists.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "lists.txt",
+    "content": "1\n2\n3\n4\n5\nList\n1\n2\n3\n4\n1\n2\n3\n4\n1\n2\n3\n4\nLIST HEADER\n1\n2\n3\n4\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-sequential-increment"
+  ],
+  "objective": [
+    "The first list is ready to number as-is.",
+    "The second has the wrong header — fix that first, then number what's under it.",
+    "The third has a stray line that doesn't belong — clear it, then number what's left.",
+    "The fourth has two stray lines instead of one.",
+    "The fifth's header is right but lowercase — fix its case, then number what's under it."
+  ],
+  "prerequisites": [
+    "prefix-every-block"
+  ]
+}

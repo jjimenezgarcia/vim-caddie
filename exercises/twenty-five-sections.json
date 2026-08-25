@@ -1,0 +1,35 @@
+{
+  "id": "twenty-five-sections",
+  "title": "Seven Sections, Seven Sorts",
+  "description": "No hints -- put every section in order, whatever each one actually needs.",
+  "par": 112,
+  "workspace": {
+    "lists.txt": "zebra\nmango\napple\nkiwi\nfig\nzebra\nmango\naple\nkiwi\nfig\nzebra\nmango\napple\nkiwi\nfig\nzebra\nmango\napple\napple\nkiwi\nfig\n10\n2\n33\n4\n5\nJUNK\nzebra\nmango\napple\nkiwi\nfig\nzebra\nmango\napple\nkiwi\nfig\nzebra\nmango\napple\nkiwi\nfig\n"
+  },
+  "open_file": "lists.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "lists.txt",
+    "content": "apple\nfig\nkiwi\nmango\nzebra\napple\nfig\nkiwi\nmango\nzebra\nzebra\nmango\nkiwi\nfig\napple\napple\nfig\nkiwi\nmango\nzebra\n2\n4\n5\n10\n33\napple\nfig\nkiwi\nmango\nzebra\napple\nfig\nkiwi\nmango\nzebra\napple\nfig\nkiwi\nmango\nzebra\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [],
+  "objective": [
+    "The first section just needs sorting.",
+    "The second has a typo -- fix it before sorting.",
+    "The third needs reverse order.",
+    "The fourth has a duplicate entry -- sort it away.",
+    "The fifth is numbers, not words -- a plain sort would get the order wrong.",
+    "The sixth has a stray line that doesn't belong -- clear it first.",
+    "The seventh and eighth are identical -- record a macro on the seventh and replay it on the eighth."
+  ],
+  "prerequisites": [
+    "sort-every-section"
+  ]
+}

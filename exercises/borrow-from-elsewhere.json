@@ -1,0 +1,31 @@
+{
+  "id": "borrow-from-elsewhere",
+  "title": "Borrow from Elsewhere",
+  "description": "Learn how to open another file and switch back without leaving Vim.",
+  "par": 44,
+  "ideal_keystrokes": ":e data.txt\r\"ayyj\"byy:e main.txt\rdd\"aPjdd\"bp",
+  "workspace": {
+    "main.txt": "PLACEHOLDER1\nPLACEHOLDER2\n",
+    "data.txt": "42\nblue\n"
+  },
+  "open_file": "main.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "main.txt",
+    "content": "42\nblue\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-buffers"
+  ],
+  "objective": [
+    "The real values live in another file.",
+    "Open it, copy what you need, and switch back to fill them in."
+  ]
+}

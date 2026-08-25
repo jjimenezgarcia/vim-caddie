@@ -1,0 +1,36 @@
+{
+  "id": "shout-repeat-sort",
+  "title": "Shout, Repeat, Sort",
+  "description": "Learn how to combine a repeated edit with a final sort.",
+  "par": 56,
+  "workspace": {
+    "words.txt": "elderberry info\napple info\ndate info\ncherry info\nbanana info\nJUNK\nkiwi info\nfig info\ngrape info\nhoneydew info\nJUNK1\nJUNK2\nnectarine info\nlemon info\nmango info\nolive info\n"
+  },
+  "open_file": "words.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "words.txt",
+    "content": "APPLE info\nBANANA info\nCHERRY info\nDATE info\nELDERBERRY info\nFIG info\nGRAPE info\nHONEYDEW info\nKIWI info\nLEMON info\nMANGO info\nNECTARINE info\nOLIVE info\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-case-operators",
+    "vim-dot-repeat",
+    "vim-sort-command"
+  ],
+  "objective": [
+    "One block is ready to shout and repeat as-is.",
+    "Another has a stray line first — clear it, then shout and repeat the rest.",
+    "A third has two stray lines first.",
+    "Once every block is shouted, sort the whole thing into order."
+  ],
+  "prerequisites": [
+    "repeat-the-fix"
+  ]
+}

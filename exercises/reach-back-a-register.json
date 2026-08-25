@@ -1,0 +1,35 @@
+{
+  "id": "reach-back-a-register",
+  "title": "Reach Back a Register",
+  "description": "Learn how to retrieve something an earlier delete pushed down the register stack.",
+  "par": 42,
+  "ideal_keystrokes": "dddd\"2pjdddddd\"3pjyyjdddddd\"0pjdddddddd\"4p",
+  "workspace": {
+    "stack.txt": "KEEP0\njunk0\nspot0\nKEEP1\njunk1a\njunk1b\nspot1\nKEEP2\nnoise2a\nnoise2b\nnoise2c\nspot2\nKEEP3\njunk3a\njunk3b\njunk3c\nspot3\n"
+  },
+  "open_file": "stack.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "stack.txt",
+    "content": "spot0\nKEEP0\nspot1\nKEEP1\nKEEP2\nspot2\nKEEP2\nspot3\nKEEP3\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-register-types"
+  ],
+  "objective": [
+    "The first group has one line of junk between the kept line and its spot — two deletes push it back one slot.",
+    "The second has two lines of junk — one more delete, so it's pushed back one slot further.",
+    "The third is different: yank the kept line instead of deleting it (it stays put), clear the junk after it, then paste that copy into the spot — a yank doesn't get pushed down by later deletes the way a delete does.",
+    "The fourth has three lines of junk — reach back one slot further still."
+  ],
+  "prerequisites": [
+    "save-it-for-later"
+  ]
+}

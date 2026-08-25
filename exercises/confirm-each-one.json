@@ -1,0 +1,34 @@
+{
+  "id": "confirm-each-one",
+  "title": "Confirm Each One",
+  "description": "Learn how to review every match before replacing it, instead of all at once.",
+  "par": 87,
+  "ideal_keystrokes": ":1,4s/temp/perm/g\r:5,8s/temp/perm/gc\rnyny:9,10s/\"temp\"/\"perm\"/g\r:11,12s/temp/perm/gc\ryn",
+  "workspace": {
+    "review.txt": "temp1 keep\ntemp2 keep\ntemp3 keep\ntemp4 keep\ntemp ok\ntemp bad\ntemp ok\ntemp bad\nname = \"temp\"\nlabel = \"temp\"\ntemp last\ntemp skip\n"
+  },
+  "open_file": "review.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "review.txt",
+    "content": "perm1 keep\nperm2 keep\nperm3 keep\nperm4 keep\ntemp ok\nperm bad\ntemp ok\nperm bad\nname = \"perm\"\nlabel = \"perm\"\nperm last\ntemp skip\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-substitute-confirm"
+  ],
+  "objective": [
+    "One block needs every match fixed, no review needed.",
+    "Another block is mixed — some matches should change, some shouldn't.",
+    "A third block has the value quoted, plus one more spot that needs a judgment call."
+  ],
+  "prerequisites": [
+    "proofread-the-file"
+  ]
+}

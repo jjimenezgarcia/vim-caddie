@@ -1,0 +1,37 @@
+{
+  "id": "shout-the-first-word",
+  "title": "Shout the First Word",
+  "description": "Learn how to change the case of text with an operator.",
+  "par": 40,
+  "ideal_keystrokes": "gUiwj0.j0guiwj0wviwUj03wgUiw/^word6\rgUiw",
+  "workspace": {
+    "shout.txt": "word1 rest1\nword2 rest2\nALREADY3 rest3\nskip word4 rest4\naaa bbb ccc word5 rest5\nword6 rest6\n"
+  },
+  "open_file": "shout.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "shout.txt",
+    "content": "WORD1 rest1\nWORD2 rest2\nalready3 rest3\nskip WORD4 rest4\naaa bbb ccc WORD5 rest5\nWORD6 rest6\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-case-operators"
+  ],
+  "objective": [
+    "The first line's first word needs shouting.",
+    "The second is identical — repeat the same change instead of redoing it.",
+    "The third is already shouting and shouldn't be — the opposite change is needed.",
+    "The fourth's word to fix isn't the first one on the line.",
+    "The fifth's word to fix is further out still.",
+    "The sixth is found by searching for it, not by counting lines."
+  ],
+  "prerequisites": [
+    "duplicate-words"
+  ]
+}

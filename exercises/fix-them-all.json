@@ -1,0 +1,33 @@
+{
+  "id": "fix-them-all",
+  "title": "Fix Them All",
+  "description": "Learn how to run a command on every line matching a pattern, across the whole file.",
+  "par": 91,
+  "ideal_keystrokes": ":g/^DEBUG/d\r:g/^WARN/normal A!\r:g/^OLD/s/OLD/NEW/\r:g/^shout/normal gUU\r:g/^TEMP/normal $a?\r",
+  "workspace": {
+    "log.txt": "DEBUG: noise0\nDEBUG: noise1\nDEBUG: noise2\nDEBUG: noise3\nDEBUG: noise4\nWARN: careful0\nWARN: careful1\nWARN: careful2\nWARN: careful3\nWARN: careful4\nOLD: value0\nOLD: value1\nOLD: value2\nOLD: value3\nOLD: value4\nshout: text0\nshout: text1\nshout: text2\nshout: text3\nshout: text4\nTEMP: item0\nTEMP: item1\nTEMP: item2\nTEMP: item3\nTEMP: item4\n"
+  },
+  "open_file": "log.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "log.txt",
+    "content": "WARN: careful0!\nWARN: careful1!\nWARN: careful2!\nWARN: careful3!\nWARN: careful4!\nNEW: value0\nNEW: value1\nNEW: value2\nNEW: value3\nNEW: value4\nSHOUT: TEXT0\nSHOUT: TEXT1\nSHOUT: TEXT2\nSHOUT: TEXT3\nSHOUT: TEXT4\nTEMP: item0?\nTEMP: item1?\nTEMP: item2?\nTEMP: item3?\nTEMP: item4?\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-global-command"
+  ],
+  "objective": [
+    "Each kind of tagged line needs its own fix: some deleted, some marked, some renamed, some shouted, some flagged.",
+    "Fix every line of each kind, wherever it appears in the file, without visiting them one by one."
+  ],
+  "prerequisites": [
+    "proofread-the-file"
+  ]
+}

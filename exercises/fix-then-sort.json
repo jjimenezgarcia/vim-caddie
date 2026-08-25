@@ -1,0 +1,33 @@
+{
+  "id": "fix-then-sort",
+  "title": "Fix, Then Sort",
+  "description": "Learn how to combine several per-tag fixes with a final sort.",
+  "par": 171,
+  "workspace": {
+    "tagged.txt": "T1 zz6\nT1 zz5\nT1 zz4\nT1 zz3\nT1 zz2\nT1 zz1\nT2 zz6\nT2 zz5\nT2 zz4\nT2 zz3\nT2 zz2\nT2 zz1\nT3 zz6\nT3 zz5\nT3 zz4\nT3 zz3\nT3 zz2\nT3 zz1\nT4 zz6\nT4 zz5\nT4 zz4\nT4 zz3\nT4 zz2\nT4 zz1\nT5 zz6\nT5 zz5\nT5 zz4\nT5 zz3\nT5 zz2\nT5 zz1\nT6 zz6\nT6 zz5\nT6 zz4\nT6 zz3\nT6 zz2\nT6 zz1\nT7 zz6\nT7 zz5\nT7 zz4\nT7 zz3\nT7 zz2\nT7 zz1\nT8 zz6\nT8 zz5\nT8 zz4\nT8 zz3\nT8 zz2\nT8 zz1\n"
+  },
+  "open_file": "tagged.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "tagged.txt",
+    "content": "\tzz1\n\tzz2\n\tzz3\n\tzz4\n\tzz5\n\tzz6\n> zz1\n> zz2\n> zz3\n> zz4\n> zz5\n> zz6\nQz1\nQz2\nQz3\nQz4\nQz5\nQz6\nZZ1\nZZ2\nZZ3\nZZ4\nZZ5\nZZ6\nzz1\nzz1\nzz1-x\nzz1-y\nzz1_end\nzz2\nzz2\nzz2-x\nzz2-y\nzz2_end\nzz3\nzz3\nzz3-x\nzz3-y\nzz3_end\nzz4\nzz4\nzz4-x\nzz4-y\nzz4_end\nzz5\nzz5\nzz5-x\nzz5-y\nzz5_end\nzz6\nzz6\nzz6-x\nzz6-y\nzz6_end\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-normal-over-range",
+    "vim-sort-command"
+  ],
+  "objective": [
+    "Eight different tags need eight different fixes.",
+    "Once every line is fixed, put the whole file in order."
+  ],
+  "prerequisites": [
+    "fix-them-all"
+  ]
+}

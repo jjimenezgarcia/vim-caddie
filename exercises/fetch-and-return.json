@@ -1,0 +1,35 @@
+{
+  "id": "fetch-and-return",
+  "title": "Fetch and Return",
+  "description": "Learn how to combine a bookmark with a saved snippet to copy something across a distance.",
+  "par": 68,
+  "ideal_keystrokes": "mayy4jp`a/VALUE1\r\"ayy2j\"byy2j\"ap2j\"bp/VLAUE3\r:s/VLAUE3/VALUE3/\ryy2jp",
+  "workspace": {
+    "long.txt": "VALUE0 here\nfiller\nfiller\nfiller\nspot0\nfiller\nVALUE1 here\nfiller\nVALUE2 here\nfiller\nspot1\nfiller\nspot2\nfiller\nVLAUE3 here\nfiller\nspot3\nfiller\n"
+  },
+  "open_file": "long.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "long.txt",
+    "content": "VALUE0 here\nfiller\nfiller\nfiller\nspot0\nVALUE0 here\nfiller\nVALUE1 here\nfiller\nVALUE2 here\nfiller\nspot1\nVALUE1 here\nfiller\nspot2\nVALUE2 here\nfiller\nVALUE3 here\nfiller\nspot3\nVALUE3 here\nfiller\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-marks",
+    "vim-registers"
+  ],
+  "objective": [
+    "The first value is a straightforward fetch — bookmark, copy, jump, paste, return.",
+    "The next two values need fetching together, before either gets dropped off — hold them in separate registers.",
+    "The last value has a typo at the source — fix it before copying it over."
+  ],
+  "prerequisites": [
+    "mark-your-spot"
+  ]
+}

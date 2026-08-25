@@ -1,0 +1,35 @@
+{
+  "id": "twenty-fetches",
+  "title": "Seven Fetches, Seven Ways",
+  "description": "No hints -- get every value to its matching spot, whatever it takes to reach it.",
+  "par": 93,
+  "workspace": {
+    "long.txt": "VALUE_A here\nfiller\nfiller\nfiller\nspot_a\nfiller\nVALUE_B here\nfiller\nfiller\nfiller\nfiller\nfiller\nspot_b\nfiller\nVALUE_C here\nfiller\nfiller\nspot_c HERE\nfiller\nfiller\nVALUE_D here\nfiller\nfiller\nfiller\nspot_d\nfiller\nVALUE_E here\nfiller\nfiller\nfiller\nspot_e\nfiller\nfiller\nfiller\nspot_f\nfiller\nfiller\nfiller\nVALUE_F here\nfiller\nspot_g\nfiller\n"
+  },
+  "open_file": "long.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "long.txt",
+    "content": "VALUE_A here\nfiller\nfiller\nfiller\nspot_a\nVALUE_A here\nfiller\nVALUE_B here\nfiller\nfiller\nfiller\nfiller\nfiller\nspot_b\nVALUE_B here\nfiller\nVALUE_C here\nfiller\nfiller\nspot_c HERE\nVALUE_C here\nfiller\nfiller\nVALUE_D here\nfiller\nfiller\nfiller\nspot_d\nVALUE_D here\nfiller\nVALUE_E here\nfiller\nfiller\nfiller\nspot_e\nVALUE_E here\nfiller\nfiller\nfiller\nspot_f\nVALUE_F here\nfiller\nfiller\nfiller\nVALUE_F here\nfiller\nspot_g\nVALUE_F here\nfiller\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [],
+  "objective": [
+    "The first spot is a fixed number of lines below its value -- bookmark, copy, jump down, drop it in, jump back.",
+    "The second is further below -- same idea, a different distance and a different register.",
+    "The third spot isn't a fixed distance away -- search for it instead.",
+    "The fourth and fifth are identical in shape -- record a macro on the fourth and replay it on the fifth.",
+    "The sixth is reversed -- the spot is above the value, not below it.",
+    "The seventh reuses a value already sitting in a register from a spot earlier -- no fresh copy needed."
+  ],
+  "prerequisites": [
+    "fetch-and-return",
+    "reach-back-a-register"
+  ]
+}

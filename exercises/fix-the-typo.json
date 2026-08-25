@@ -1,0 +1,33 @@
+{
+  "id": "fix-the-typo",
+  "title": "Oops, Did I Do That?",
+  "description": "Learn how to delete just the right amount, in one clean move.",
+  "par": 2,
+  "ideal_keystrokes": "dw",
+  "workspace": {
+    "hole.txt": "The quikc brown fox jumps\n"
+  },
+  "open_file": "hole.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "hole.txt",
+    "content": "The brown fox jumps\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 5
+  },
+  "related_theory": [
+    "vim-word-motions",
+    "vim-operators",
+    "vim-operators-and-motions"
+  ],
+  "objective": [
+    "Find the word that does not belong.",
+    "Remove it in a single motion.",
+    "Leave everything else untouched."
+  ]
+}

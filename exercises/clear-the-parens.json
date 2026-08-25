@@ -1,0 +1,33 @@
+{
+  "id": "clear-the-parens",
+  "title": "Clear the Parens",
+  "description": "Learn how to jump to (or act through) a matching bracket.",
+  "par": 43,
+  "ideal_keystrokes": "wd%j0wd%j0wd%j0wd%j0wd%j0wd%j0wd%j0wd%j0wd%",
+  "workspace": {
+    "brackets.txt": "keep1 (DELETE1) keep1\nkeep2 (DELETE2) keep2\nkeep3 (DELETE3) keep3\nkeep4 (DELETE4) keep4\nkeep5 (DELETE5) keep5\nkeep6 (DELETE6) keep6\nkeep7 (DELETE7) keep7\nkeep8 (DELETE8) keep8\nkeep9 (DELETE9) keep9\n"
+  },
+  "open_file": "brackets.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "brackets.txt",
+    "content": "keep1  keep1\nkeep2  keep2\nkeep3  keep3\nkeep4  keep4\nkeep5  keep5\nkeep6  keep6\nkeep7  keep7\nkeep8  keep8\nkeep9  keep9\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-percent-match"
+  ],
+  "objective": [
+    "Each line has a parenthesized aside that needs to go, brackets included.",
+    "Clear it in one move, on every line."
+  ],
+  "prerequisites": [
+    "fix-the-typo"
+  ]
+}

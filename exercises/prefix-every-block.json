@@ -1,0 +1,36 @@
+{
+  "id": "prefix-every-block",
+  "title": "Prefix Every Block",
+  "description": "Learn how to insert the same text at the start of many lines at once.",
+  "par": 46,
+  "ideal_keystrokes": "\u00163jI> \u001b4j.4j\u00163j3lA end\u001b4j\u00162jcX\u001b3jma4j`a\u00163jI> \u001b",
+  "workspace": {
+    "blocks.txt": "g0l0\ng0l1\ng0l2\ng0l3\ng1l0\ng1l1\ng1l2\ng1l3\ng2l0\ng2l1\ng2l2\ng2l3\ng3l0\ng3l1\ng3l2\ng4l0\ng4l1\ng4l2\ng4l3\n"
+  },
+  "open_file": "blocks.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "blocks.txt",
+    "content": "> g0l0\n> g0l1\n> g0l2\n> g0l3\n> g1l0\n> g1l1\n> g1l2\n> g1l3\ng2l0 end\ng2l1 end\ng2l2 end\ng2l3 end\nX3l0\nX3l1\nX3l2\n> g4l0\n> g4l1\n> g4l2\n> g4l3\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-visual-block-insert"
+  ],
+  "objective": [
+    "The first group needs the same marker inserted at the start of every line.",
+    "The second is the same shape — repeat the change instead of redoing it.",
+    "The third needs a word appended at the end of every line instead.",
+    "The fourth group is shorter, and needs its first column swapped for something else, not just prefixed.",
+    "The fifth — mark where it starts, glance ahead, then come back and prefix it."
+  ],
+  "prerequisites": [
+    "clear-the-clutter"
+  ]
+}

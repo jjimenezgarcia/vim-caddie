@@ -1,0 +1,33 @@
+{
+  "id": "clear-the-clutter",
+  "title": "Clear the Clutter",
+  "description": "Learn how to select whole lines by eye and act on the selection.",
+  "par": 44,
+  "ideal_keystrokes": "V2jdjV2jdjV2jdjV2jdjV2jdjV2jdjV2jdjV2jdjV2jd",
+  "workspace": {
+    "messy.txt": "keep\nDELETE\nDELETE\nDELETE\nkeep\nDELETE\nDELETE\nDELETE\nkeep\nDELETE\nDELETE\nDELETE\nkeep\nDELETE\nDELETE\nDELETE\nkeep\nDELETE\nDELETE\nDELETE\nkeep\nDELETE\nDELETE\nDELETE\nkeep\nDELETE\nDELETE\nDELETE\nkeep\nDELETE\nDELETE\nDELETE\nkeep\nDELETE\nDELETE\nDELETE\n"
+  },
+  "open_file": "messy.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "messy.txt",
+    "content": "keep\nkeep\nkeep\nkeep\nkeep\nkeep\nkeep\nkeep\nkeep\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 2,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-visual-line-and-block"
+  ],
+  "objective": [
+    "Every block of junk is three lines long.",
+    "Select each block by eye and clear it, all the way down."
+  ],
+  "prerequisites": [
+    "select-and-clear"
+  ]
+}

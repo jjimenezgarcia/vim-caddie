@@ -1,0 +1,34 @@
+{
+  "id": "forty-five-lists",
+  "title": "Six Lists, Six Fixes",
+  "description": "No hints -- turn every list into a numbered sequence, whatever it takes to get there first.",
+  "par": 93,
+  "workspace": {
+    "lists.txt": "0\n0\n0\n0\n0\nWRONGTITLE\n0\n0\n0\n0\n0\nJUNK1\nJUNK2\n0\n0\n0\n0\n0\nlist header\n0\n0\n0\n0\n0\nWRONGHEAD\n0\n0\n0\n0\n0\nWRONGHEAD\n0\n0\n0\n0\n0\nList\nPLACEHOLDER\n0\n0\n0\n0\n0\n"
+  },
+  "open_file": "lists.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "lists.txt",
+    "content": "1\n2\n3\n4\n5\nList\n1\n2\n3\n4\n5\n1\n2\n3\n4\n5\nLIST HEADER\n1\n2\n3\n4\n5\nList\n1\n2\n3\n4\n5\nList\n1\n2\n3\n4\n5\nList\n1\n2\n3\n4\n5\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [],
+  "objective": [
+    "The first list is ready to number as-is.",
+    "The second has the wrong header -- fix that first.",
+    "The third has two stray lines that don't belong -- clear them first.",
+    "The fourth's header is right but lowercase -- fix its case first.",
+    "The fifth and sixth are identical in shape -- record a macro on the fifth that fixes the header and numbers the list, then replay it on the sixth.",
+    "The seventh's header is a placeholder -- the real one sits on the line above it, ready to be pulled into place with a register."
+  ],
+  "prerequisites": [
+    "number-every-list"
+  ]
+}

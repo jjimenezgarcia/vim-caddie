@@ -1,0 +1,32 @@
+{
+  "id": "line-by-line",
+  "title": "Line by Line",
+  "description": "Learn how to reuse a skill from the very first exercises in a bigger task.",
+  "par": 19,
+  "ideal_keystrokes": "A,\u001bjA,\u001bjA,\u001bjA,\u001bjA,\u001b",
+  "workspace": {
+    "list.txt": "one\ntwo\nthree\nfour\nfive\n"
+  },
+  "open_file": "list.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "list.txt",
+    "content": "one,\ntwo,\nthree,\nfour,\nfive,\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-insert-entry-points"
+  ],
+  "objective": [
+    "Add the missing punctuation to the end of every line."
+  ],
+  "prerequisites": [
+    "insert-below"
+  ]
+}

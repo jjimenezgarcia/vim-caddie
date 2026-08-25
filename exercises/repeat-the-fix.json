@@ -1,0 +1,33 @@
+{
+  "id": "repeat-the-fix",
+  "title": "Repeat the Fix",
+  "description": "Learn how to repeat your last edit without retyping it.",
+  "par": 44,
+  "ideal_keystrokes": "dwj0.j0.j0.j0.j0.j0.j0.j0.j0.j0.j0.j0.j0.j0.",
+  "workspace": {
+    "repeat.txt": "REMOVE keep1\nREMOVE keep2\nREMOVE keep3\nREMOVE keep4\nREMOVE keep5\nREMOVE keep6\nREMOVE keep7\nREMOVE keep8\nREMOVE keep9\nREMOVE keep10\nREMOVE keep11\nREMOVE keep12\nREMOVE keep13\nREMOVE keep14\nREMOVE keep15\n"
+  },
+  "open_file": "repeat.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "repeat.txt",
+    "content": "keep1\nkeep2\nkeep3\nkeep4\nkeep5\nkeep6\nkeep7\nkeep8\nkeep9\nkeep10\nkeep11\nkeep12\nkeep13\nkeep14\nkeep15\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-dot-repeat"
+  ],
+  "objective": [
+    "Every line needs the exact same fix.",
+    "Do it once, then repeat it down the file instead of redoing it by hand."
+  ],
+  "prerequisites": [
+    "fix-the-typo"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "reuse-the-selection",
+  "title": "Reuse the Selection",
+  "description": "Learn how to bring back your last visual selection instead of reselecting it.",
+  "par": 42,
+  "ideal_keystrokes": "VjUgv>2jVj>gvU2jVj>gv:s/line/LN/\rjddVjUgv>",
+  "workspace": {
+    "pairs.txt": "line0a\nline0b\nline1a\nline1b\nline2a\nline2b\nJUNK\nline3a\nline3b\n"
+  },
+  "open_file": "pairs.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "pairs.txt",
+    "content": "\tLINE0A\n\tLINE0B\n\tLINE1A\n\tLINE1B\n\tLN2a\n\tLN2b\n\tLINE3A\n\tLINE3B\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-reselect-visual"
+  ],
+  "objective": [
+    "One pair needs shouting, then the same selection reused to indent it.",
+    "Another pair is indented first, then the same selection reused to shout it.",
+    "A third pair is indented, then the same selection reused to run a substitute over it.",
+    "A stray line doesn't belong — clear it, then shout and indent what's left the same way."
+  ],
+  "prerequisites": [
+    "select-and-clear"
+  ]
+}

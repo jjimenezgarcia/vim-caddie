@@ -1,0 +1,33 @@
+{
+  "id": "overtype-the-codes",
+  "title": "Overtype the Codes",
+  "description": "Learn how to overtype existing text instead of inserting alongside it.",
+  "par": 64,
+  "ideal_keystrokes": "2wR11111\u001bj02wR22222\u001bj02wR33333\u001bj02wR44444\u001bj02wR55555\u001bj02wR66666\u001b",
+  "workspace": {
+    "codes.txt": "id: XXXXX\nid: XXXXX\nid: XXXXX\nid: XXXXX\nid: XXXXX\nid: XXXXX\n"
+  },
+  "open_file": "codes.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "codes.txt",
+    "content": "id: 11111\nid: 22222\nid: 33333\nid: 44444\nid: 55555\nid: 66666\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-replace-mode"
+  ],
+  "objective": [
+    "Every code is a placeholder.",
+    "Overtype each one with its real value, character for character."
+  ],
+  "prerequisites": [
+    "replace-a-character"
+  ]
+}

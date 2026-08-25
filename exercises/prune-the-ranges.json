@@ -1,0 +1,35 @@
+{
+  "id": "prune-the-ranges",
+  "title": "Prune the Ranges",
+  "description": "Learn how to run a command over a specific range of lines.",
+  "par": 42,
+  "ideal_keystrokes": "j:.,+1d\rj:.,/keep2/-1d\rjma2j:'a,.d\rj:.,$d\r",
+  "workspace": {
+    "trimmed.txt": "keep0\nDROP0a\nDROP0b\nkeep1\nDROP1a\nDROP1b\nDROP1c\nkeep2\nDROP2a\nDROP2b\nDROP2c\nkeep3\nDROP3a\nDROP3b\n"
+  },
+  "open_file": "trimmed.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "trimmed.txt",
+    "content": "keep0\nkeep1\nkeep2\nkeep3\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-ex-ranges"
+  ],
+  "objective": [
+    "The first group's junk pair sits right after the line to keep — remove it with a plain range.",
+    "The second group is longer — remove it in one move by ending the range at the next kept line instead of counting it.",
+    "The third group — mark where its junk starts, then close the range from there instead of counting again.",
+    "The last group runs to the end of the file — remove it in one move by ending the range there instead."
+  ],
+  "prerequisites": [
+    "proofread-the-file"
+  ]
+}

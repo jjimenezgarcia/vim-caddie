@@ -1,0 +1,30 @@
+{
+  "id": "insert-below",
+  "title": "Squeeze It In",
+  "description": "Learn how to open a new line below the cursor and start typing.",
+  "par": 8,
+  "ideal_keystrokes": "osecond\u001b",
+  "workspace": {
+    "todo.txt": "first\nthird\n"
+  },
+  "open_file": "todo.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "todo.txt",
+    "content": "first\nsecond\nthird\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-insert-entry-points"
+  ],
+  "objective": [
+    "Add a new line right after the first one.",
+    "Type what's missing, then get back to normal mode."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "hunt-the-errors",
+  "title": "Hunt the Errors",
+  "description": "Learn how to jump straight to the next match of a pattern.",
+  "par": 15,
+  "ideal_keystrokes": "/ERROR\rddnddndd",
+  "workspace": {
+    "log.txt": "ok\nERROR\nok\nok\nERROR\nok\nERROR\nok\n"
+  },
+  "open_file": "log.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "log.txt",
+    "content": "ok\nok\nok\nok\nok\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-search"
+  ],
+  "objective": [
+    "Find each line reporting an error.",
+    "Remove it, then jump straight to the next one."
+  ],
+  "prerequisites": [
+    "delete-a-line"
+  ]
+}

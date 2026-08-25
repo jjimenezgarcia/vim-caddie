@@ -1,0 +1,33 @@
+{
+  "id": "record-and-replay",
+  "title": "Record and Replay",
+  "description": "Learn how to record a sequence of edits once and replay it.",
+  "par": 116,
+  "ideal_keystrokes": "qa0dwA-done\u001bjq7@a9Gqa0dwA-done\u001bjq7@a17Gqa0dwA-done\u001bjq7@a25Gqa0dwA-done\u001bjq7@a33Gqa0dwA-done\u001bjq7@a41Gqa0dwA-done\u001bjq7@a",
+  "workspace": {
+    "cleanup.txt": "junk0 keep0-1\njunk0 keep0-2\njunk0 keep0-3\njunk0 keep0-4\njunk0 keep0-5\njunk0 keep0-6\njunk0 keep0-7\njunk0 keep0-8\njunk1 keep1-1\njunk1 keep1-2\njunk1 keep1-3\njunk1 keep1-4\njunk1 keep1-5\njunk1 keep1-6\njunk1 keep1-7\njunk1 keep1-8\njunk2 keep2-1\njunk2 keep2-2\njunk2 keep2-3\njunk2 keep2-4\njunk2 keep2-5\njunk2 keep2-6\njunk2 keep2-7\njunk2 keep2-8\njunk3 keep3-1\njunk3 keep3-2\njunk3 keep3-3\njunk3 keep3-4\njunk3 keep3-5\njunk3 keep3-6\njunk3 keep3-7\njunk3 keep3-8\njunk4 keep4-1\njunk4 keep4-2\njunk4 keep4-3\njunk4 keep4-4\njunk4 keep4-5\njunk4 keep4-6\njunk4 keep4-7\njunk4 keep4-8\njunk5 keep5-1\njunk5 keep5-2\njunk5 keep5-3\njunk5 keep5-4\njunk5 keep5-5\njunk5 keep5-6\njunk5 keep5-7\njunk5 keep5-8\n"
+  },
+  "open_file": "cleanup.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "cleanup.txt",
+    "content": "keep0-1-done\nkeep0-2-done\nkeep0-3-done\nkeep0-4-done\nkeep0-5-done\nkeep0-6-done\nkeep0-7-done\nkeep0-8-done\nkeep1-1-done\nkeep1-2-done\nkeep1-3-done\nkeep1-4-done\nkeep1-5-done\nkeep1-6-done\nkeep1-7-done\nkeep1-8-done\nkeep2-1-done\nkeep2-2-done\nkeep2-3-done\nkeep2-4-done\nkeep2-5-done\nkeep2-6-done\nkeep2-7-done\nkeep2-8-done\nkeep3-1-done\nkeep3-2-done\nkeep3-3-done\nkeep3-4-done\nkeep3-5-done\nkeep3-6-done\nkeep3-7-done\nkeep3-8-done\nkeep4-1-done\nkeep4-2-done\nkeep4-3-done\nkeep4-4-done\nkeep4-5-done\nkeep4-6-done\nkeep4-7-done\nkeep4-8-done\nkeep5-1-done\nkeep5-2-done\nkeep5-3-done\nkeep5-4-done\nkeep5-5-done\nkeep5-6-done\nkeep5-7-done\nkeep5-8-done\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-macros"
+  ],
+  "objective": [
+    "Every line needs its first word removed.",
+    "Record the fix once, then replay it down each block instead of redoing it by hand."
+  ],
+  "prerequisites": [
+    "repeat-the-fix"
+  ]
+}

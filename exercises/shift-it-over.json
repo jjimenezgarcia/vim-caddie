@@ -1,0 +1,32 @@
+{
+  "id": "shift-it-over",
+  "title": "Shift It Over",
+  "description": "Learn how to indent a line without placing the cursor at its start first.",
+  "par": 17,
+  "ideal_keystrokes": ">>j>>j>>j>>j>>j>>",
+  "workspace": {
+    "code.txt": "line1\nline2\nline3\nline4\nline5\nline6\n"
+  },
+  "open_file": "code.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "code.txt",
+    "content": "\tline1\n\tline2\n\tline3\n\tline4\n\tline5\n\tline6\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-indent"
+  ],
+  "objective": [
+    "Indent every line in the file, one level each."
+  ],
+  "prerequisites": [
+    "delete-a-line"
+  ]
+}

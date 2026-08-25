@@ -1,0 +1,35 @@
+{
+  "id": "seventy-eight-paragraphs",
+  "title": "Ten Paragraphs, Ten Fixes",
+  "description": "No hints -- trim every paragraph down, whatever it takes to get there.",
+  "par": 91,
+  "workspace": {
+    "prose.txt": "Bad sentence here. Good sentence stays.\n\nBad sentence here. Good sentense stays.\n\nGood sentence stays. Bad sentence here.\n\nBad sentence here. Good sentence stays.\n\nBad sentence here. Good sentence stays.\n\nGood first. Bad middle here. Good last stays.\n\nBad sentence here. Good sentence stays.\n\nBad sentence here. Good sentence stays.\n\nBad sentence here. Good sentence stays.\n\nExtra clause to cut. Good final stays.\n\n"
+  },
+  "open_file": "prose.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "prose.txt",
+    "content": "Good sentence stays.\n\nGood sentence stays.\n\nGood sentence stays.\n\nGood sentence stays.\n\nGood sentence stays.\n\nGood first. Good last stays.\n\nGood sentence stays.\n\nGood sentence stays.\n\nGood sentence stays.\n\nGood final stays.\n\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [],
+  "objective": [
+    "The first paragraph's opening sentence doesn't belong -- remove it.",
+    "The second's kept sentence also has a typo -- fix that too.",
+    "The third has the bad sentence second, not first.",
+    "The fourth and fifth are identical -- record a macro on the fourth and replay it on the fifth.",
+    "The sixth has three sentences -- the bad one is in the middle.",
+    "The next several all open with the same bad sentence -- fix every one of them in a single command instead of one at a time.",
+    "The last paragraph is on its own -- jump straight to it and finish by hand."
+  ],
+  "prerequisites": [
+    "trim-the-paragraphs"
+  ]
+}

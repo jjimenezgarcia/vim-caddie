@@ -1,0 +1,32 @@
+{
+  "id": "trim-the-banner",
+  "title": "Trim the Banner",
+  "description": "Learn how to repeat a command a set number of times.",
+  "par": 15,
+  "ideal_keystrokes": "2ddj2ddj2ddj2dd",
+  "workspace": {
+    "banner.txt": "***\n***\nOne\n***\n***\nTwo\n***\n***\nThree\n***\n***\n"
+  },
+  "open_file": "banner.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "banner.txt",
+    "content": "One\nTwo\nThree\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-counts"
+  ],
+  "objective": [
+    "Remove each decorative border, all at once instead of one line at a time."
+  ],
+  "prerequisites": [
+    "delete-a-line"
+  ]
+}

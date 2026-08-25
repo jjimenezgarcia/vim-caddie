@@ -1,0 +1,30 @@
+{
+  "id": "reach-the-x",
+  "title": "I Like to Move It, Move It",
+  "description": "Learn how to move the cursor around.",
+  "par": 6,
+  "ideal_keystrokes": "jjllll",
+  "workspace": {
+    "grid.txt": "..........\n..........\n....X.....\n..........\n"
+  },
+  "open_file": "grid.txt",
+  "success": {
+    "type": "cursor_at",
+    "line": 3,
+    "col": 5
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-hjkl-motions"
+  ],
+  "objective": [
+    "Reach the target.",
+    "Use only basic movement \u2014 no shortcuts."
+  ]
+}

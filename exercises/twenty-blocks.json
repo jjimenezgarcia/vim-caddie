@@ -1,0 +1,35 @@
+{
+  "id": "twenty-blocks",
+  "title": "Eight Blocks, Eight Fixes",
+  "description": "No hints -- mark every block, whatever it takes to get there first.",
+  "par": 90,
+  "workspace": {
+    "blocks.txt": "a0\na1\na2\na3\nb0\nB1\nb2\nb3\nJUNK\nc0\nc1\nc2\nc3\nd0\nd1\nd2\nd3\ne0\ne1\ne2\ne3\nf0\nf1\nf2\nf3\nnoise1\nnoise2\nspot_g\ng0\ng1\nh0\nh1\nh2\nh3\n"
+  },
+  "open_file": "blocks.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "blocks.txt",
+    "content": "> a0\n> a1\n> a2\n> a3\n> b0\n> b1\n> b2\n> b3\n> c0\n> c1\n> c2\n> c3\nd0 END\nd1 END\nd2 END\nd3 END\n> e0\n> e1\n> e2\n> e3\n> f0\n> f1\n> f2\n> f3\nnoise1\nnoise2\n> g0\n> g1\n> H0\n> H1\n> H2\n> H3\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [],
+  "objective": [
+    "The first block is ready to prefix as-is.",
+    "The second has one miscased line -- fix it before prefixing the block.",
+    "The third has a stray line that doesn't belong -- clear it first.",
+    "The fourth needs the mark appended at the end of each line instead of the start.",
+    "The fifth and sixth are identical in shape -- record a macro on the fifth and replay it on the sixth.",
+    "The seventh's block isn't right where you start -- find it, clear what's above it, then mark it.",
+    "The eighth needs its first letter capitalized across the whole block before marking it."
+  ],
+  "prerequisites": [
+    "prefix-every-block"
+  ]
+}

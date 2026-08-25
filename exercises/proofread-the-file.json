@@ -1,0 +1,33 @@
+{
+  "id": "proofread-the-file",
+  "title": "Proofread the File",
+  "description": "Learn how to fix every occurrence of a mistake across the whole file in one command.",
+  "par": 80,
+  "ideal_keystrokes": ":%s/teh/the/g\r:%s/recieve/receive/g\r:%s/adress/address/g\r:%s/occured/occurred/g\r",
+  "workspace": {
+    "draft.txt": "teh word here\nanother teh spot\nteh again\nrecieve word here\nanother recieve spot\nrecieve again\nadress word here\nanother adress spot\nadress again\noccured word here\nanother occured spot\noccured again\n"
+  },
+  "open_file": "draft.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "draft.txt",
+    "content": "the word here\nanother the spot\nthe again\nreceive word here\nanother receive spot\nreceive again\naddress word here\nanother address spot\naddress again\noccurred word here\nanother occurred spot\noccurred again\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-substitute-range"
+  ],
+  "objective": [
+    "Four different typos are scattered throughout the file, each repeated a few times.",
+    "Fix every occurrence of each one, file-wide."
+  ],
+  "prerequisites": [
+    "find-and-fix"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ten-blocks-of-macros",
+  "title": "Ten Blocks",
+  "description": "No hints -- clean up every block, your way.",
+  "par": 91,
+  "workspace": {
+    "cleanup.txt": "junkA keep-1\njunkA keep-2\njunkA keep-3\njunkA keep-4\njunkB item0\njunkB item0\njunkB item0\njunkB item0\njunkC charlie\njunkC alpha\njunkC bravo\njunkD quiet\njunkD hush\njunkD murmur\n"
+  },
+  "open_file": "cleanup.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "cleanup.txt",
+    "content": "keep-1-done\nkeep-2-done\nkeep-3-done\nkeep-4-done\nitem1\nitem2\nitem3\nitem4\nalpha\nbravo\ncharlie\nQUIET\nHUSH\nMURMUR\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [],
+  "objective": [
+    "Each block has its own junk prefix and its own job once it's gone: one just needs a marker appended, one needs its values numbered, one needs sorting, one needs shouting.",
+    "Record a macro for the repeatable part of each block and replay it down the block."
+  ],
+  "prerequisites": [
+    "record-and-replay"
+  ]
+}

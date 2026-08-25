@@ -1,0 +1,36 @@
+{
+  "id": "pattern-cleanup",
+  "title": "Pattern Cleanup",
+  "description": "Learn a few regex basics for search and substitute.",
+  "par": 87,
+  "ideal_keystrokes": ":%s/^\\d\\+ //\r:%s/value/item/g\r:%s/ [a-z]$//\r:%s/\\d\\+//g\r:%s/ \\+/ /g\r:%s/^/> /\r:%s/$/;/\r",
+  "workspace": {
+    "data.txt": "42 apples\n17 oranges\n8 pears\nvalue one\nvalue two\nvalue three\nrow a\nrow b\nrow c\nmiddle 99 stuff\nmiddle 5 stuff\nmiddle 123 stuff\nspacey   text   here\nother    stuff   too\n"
+  },
+  "open_file": "data.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "data.txt",
+    "content": "> apples;\n> oranges;\n> pears;\n> item one;\n> item two;\n> item three;\n> row;\n> row;\n> row;\n> middle stuff;\n> middle stuff;\n> middle stuff;\n> spacey text here;\n> other stuff too;\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-regex-basics"
+  ],
+  "objective": [
+    "A count needs stripping from the start of some lines.",
+    "A word needs renaming everywhere.",
+    "A trailing single letter needs to go.",
+    "Stray digits and doubled-up spaces need cleaning up.",
+    "Every line needs the same marker at the start and the same punctuation at the end."
+  ],
+  "prerequisites": [
+    "proofread-the-file"
+  ]
+}

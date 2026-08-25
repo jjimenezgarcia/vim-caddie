@@ -1,0 +1,33 @@
+{
+  "id": "fix-the-values",
+  "title": "Fix the Values",
+  "description": "Learn how to replace exactly what's inside a pair of quotes.",
+  "par": 46,
+  "ideal_keystrokes": "ci\"right1\u001bj0ci\"right2\u001bj0ci\"right3\u001bj0ci\"right4\u001b",
+  "workspace": {
+    "config.txt": "key1 = \"wrong1\"\nkey2 = \"wrong2\"\nkey3 = \"wrong3\"\nkey4 = \"wrong4\"\n"
+  },
+  "open_file": "config.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "config.txt",
+    "content": "key1 = \"right1\"\nkey2 = \"right2\"\nkey3 = \"right3\"\nkey4 = \"right4\"\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-text-objects-extended"
+  ],
+  "objective": [
+    "Each line has the wrong value inside its quotes.",
+    "Replace just what's inside the quotes, leaving them in place."
+  ],
+  "prerequisites": [
+    "duplicate-words"
+  ]
+}

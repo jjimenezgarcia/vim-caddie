@@ -1,0 +1,34 @@
+{
+  "id": "save-it-for-later",
+  "title": "Save It for Later",
+  "description": "Learn how to yank into a named register instead of the default one.",
+  "par": 46,
+  "ideal_keystrokes": "\"ayyjdd\"apjdd\"apjdd\"apjdd\"apjdd\"apjdd\"apjdd\"ap",
+  "workspace": {
+    "file.txt": "TEMPLATE LINE\njunk0\nspot0\njunk1\nspot1\njunk2\nspot2\njunk3\nspot3\njunk4\nspot4\njunk5\nspot5\njunk6\nspot6\n"
+  },
+  "open_file": "file.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "file.txt",
+    "content": "TEMPLATE LINE\nspot0\nTEMPLATE LINE\nspot1\nTEMPLATE LINE\nspot2\nTEMPLATE LINE\nspot3\nTEMPLATE LINE\nspot4\nTEMPLATE LINE\nspot5\nTEMPLATE LINE\nspot6\nTEMPLATE LINE\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-registers"
+  ],
+  "objective": [
+    "Save the template line somewhere safe.",
+    "Clear out each piece of junk (that alone would normally overwrite what you copied).",
+    "Paste your saved template in after each spot, proving it survived."
+  ],
+  "prerequisites": [
+    "copy-and-paste"
+  ]
+}

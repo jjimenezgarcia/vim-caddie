@@ -1,0 +1,31 @@
+{
+  "id": "sort-every-section",
+  "title": "Sort Every Section",
+  "description": "Learn how to alphabetize a block of lines in one command.",
+  "par": 66,
+  "workspace": {
+    "lists.txt": "zebra\nmango\napple\nkiwi\nfig\nzebra\nJUNK\nmango\napple\nkiwi\nfig\nzebra\nmango\napple\nkiwi\nfig\nzebra\nmango\napple\nkiwi\nfig\nfig\n"
+  },
+  "open_file": "lists.txt",
+  "success": {
+    "type": "buffer_match",
+    "file": "lists.txt",
+    "content": "apple\nfig\nkiwi\nmango\nzebra\napple\nfig\nkiwi\nmango\nzebra\napple\nfig\nkiwi\nmango\nzebra\nzebra\nmango\nkiwi\nfig\napple\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-sort-command"
+  ],
+  "objective": [
+    "The first section is ready to sort as-is.",
+    "The second has a stray line mixed in — clear it out, then sort what's left.",
+    "The third should be sorted by selecting it visually first, not by typing a range.",
+    "The fourth has a duplicate entry — drop it, then sort the rest in reverse."
+  ]
+}
