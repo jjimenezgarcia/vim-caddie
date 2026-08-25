@@ -1,2 +1,28 @@
 # Workshop
 workshop.yaml
+
+# Frontend
+node_modules/
+dist/
+
+# Backend
+server/.venv/
+server/__pycache__/
+**/__pycache__/
+*.pyc
+
+# Every exercise's solution (scripts/gen_all_results.py) — includes the
+# two tiers the app itself never reveals a solution for (professional/
+# genius), kept out of the repo on purpose, not just out of the UI; see
+# server/exercises.py's list_exercises() for the corresponding API-side
+# redaction. private_solutions.json is the underlying vault
+# gen_all_results.py renders this from for those two tiers, once their
+# own exercises/*.json no longer carries ideal_keystrokes at all.
+all_results.md
+private_solutions.json
+
+# Deployment
+# .env holds machine-specific overrides (see .env.example, which IS
+# committed, for what's available) — never the same across deployments,
+# so never one to commit.
+.env

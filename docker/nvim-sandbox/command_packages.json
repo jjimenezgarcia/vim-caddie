@@ -1,0 +1,5 @@
+{
+  "_comment": "Explicit allowlist of what an exercise is even allowed to whitelist — not 'any apt package'. Maps a command name (as exercises/*.json's permissions.commands entries) to the Debian package that provides it. scripts/build_exercise_images.py refuses to build an image for any command not listed here. Kept to exactly what some exercise actually uses — add an entry here when an exercise first needs it, not preemptively.",
+  "ls": "coreutils",
+  "cat": "coreutils"
+}
