@@ -54,7 +54,11 @@ export default function AuthScreen({ onAuthenticated }) {
           <button
             type="submit"
             disabled={busy}
-            className="mt-1 rounded-full bg-emerald-600 px-8 py-2.5 text-lg font-medium text-white shadow-sm transition-colors hover:bg-emerald-500 disabled:opacity-60"
+            className={`mt-1 rounded-full px-8 py-2.5 text-lg font-medium shadow-sm transition-colors disabled:opacity-60 ${
+              mode === "login"
+                ? "bg-emerald-600 text-white hover:bg-emerald-500"
+                : "bg-sky-200 text-sky-900 hover:bg-sky-300"
+            }`}
           >
             {mode === "login" ? "Log in" : "Sign up"}
           </button>
