@@ -1,0 +1,10 @@
+node_modules
+dist
+server/.venv
+server/__pycache__
+**/__pycache__
+*.pyc
+.git
+.claude
+docs/
+private/

@@ -1,0 +1,86 @@
+# `docker compose up --build` and open http://localhost:8080 — see
+# README.md's Deployment section for what each piece below is doing and
+# why, especially the docker.sock mount.
+#
+# Only `frontend` publishes a port. `backend` is reached over the
+# `internal` network (nginx proxies to it — see
+# docker/frontend/nginx.conf) and is never reachable from outside the
+# host. `launcher` is reached only over the separate `docker-control`
+# network, by `backend` alone — `frontend` isn't attached to it, so it
+# can never reach launcher even indirectly.
+#
+# launcher is the only service with docker.sock mounted. backend has
+# none: a full RCE there gets an attacker one more sandboxed container,
+# not host root — see server/launcher.py's module docstring for the full
+# reasoning and server/nvim_session.py for the client side of it.
+services:
+  launcher:
+    build:
+      context: .
+      dockerfile: docker/launcher/Dockerfile
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      # Fixed literal path, not ${HOME}/${PWD}: the *host* daemon resolves
+      # this bind-mount source (launcher tells it to mount this same path
+      # into each sandbox container), so it must be identical on both
+      # sides — and identical to backend's own mount of it below, since
+      # that's where the session files actually get written. ${HOME}/${PWD}
+      # also risk two real failure modes here: the ~108-byte AF_UNIX path
+      # limit on a long path, and snap-packaged Docker remapping ${HOME}
+      # differently for its own CLI than for the daemon. Override
+      # VIM_CADDIE_SESSIONS_DIR if this default isn't writable on your
+      # system.
+      - ${VIM_CADDIE_SESSIONS_DIR:-/var/lib/vim-caddie/sessions}:${VIM_CADDIE_SESSIONS_DIR:-/var/lib/vim-caddie/sessions}
+    environment:
+      - VIM_CADDIE_SESSIONS_DIR=${VIM_CADDIE_SESSIONS_DIR:-/var/lib/vim-caddie/sessions}
+    networks:
+      - docker-control
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import socket; socket.create_connection(('localhost', 9000), 2)"]
+      interval: 2s
+      timeout: 2s
+      retries: 60
+
+  backend:
+    build:
+      context: .
+      dockerfile: docker/backend/Dockerfile
+    depends_on:
+      launcher:
+        condition: service_healthy
+    volumes:
+      - ${VIM_CADDIE_SESSIONS_DIR:-/var/lib/vim-caddie/sessions}:${VIM_CADDIE_SESSIONS_DIR:-/var/lib/vim-caddie/sessions}
+      - progress-data:/data
+    environment:
+      - VIM_CADDIE_SESSIONS_DIR=${VIM_CADDIE_SESSIONS_DIR:-/var/lib/vim-caddie/sessions}
+      - VIM_CADDIE_PROGRESS_DB=/data/progress.db
+      - VIM_CADDIE_HOST=0.0.0.0
+      - VIM_CADDIE_LAUNCHER_HOST=launcher
+      - VIM_CADDIE_LAUNCHER_PORT=9000
+    networks:
+      - internal
+      - docker-control
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend/Dockerfile
+      # Only needed if frontend and backend genuinely need to be on
+      # different origins — same-origin (nginx proxying to `backend`) is
+      # the default and needs neither.
+      args:
+        VITE_VIM_CADDIE_WS_URL: ${VITE_VIM_CADDIE_WS_URL:-}
+        VITE_VIM_CADDIE_HTTP_URL: ${VITE_VIM_CADDIE_HTTP_URL:-}
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
+    networks:
+      - internal
+
+networks:
+  internal:
+  docker-control:
+
+volumes:
+  progress-data:

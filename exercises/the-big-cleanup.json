@@ -25,9 +25,9 @@
     "vim-sort-command"
   ],
   "objective": [
-    "One line is pure noise and doesn't belong at all.",
-    "Every other line has a junk label and needs the same fix, block by block.",
-    "Once it's all cleaned up, put it in order."
+    "Every line starting with NOISE is pure clutter and doesn't belong at all — clear all of them first.",
+    "Every other line has a junk label at the start that needs stripping, with \"-done\" appended to what's left — the same fix, block by block.",
+    "Once it's all cleaned up, put the whole file in order."
   ],
   "prerequisites": [
     "fix-them-all"

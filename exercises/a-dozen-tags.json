@@ -21,8 +21,23 @@
   },
   "related_theory": [],
   "objective": [
-    "Sixteen different tags, sixteen different fixes.",
-    "Clear every tag and apply its treatment, wherever it appears."
+    "TA lines need \"-x\" appended to their value.",
+    "TB lines need \"-y\" appended to their value.",
+    "TC lines need their value shouted (uppercased).",
+    "TD lines need indenting.",
+    "TE lines need their value's first character replaced with Q.",
+    "TF lines need duplicating.",
+    "TG lines need a \"> \" prefix.",
+    "TH lines need \"_end\" appended to their value.",
+    "TI lines need their value un-shouted (lowercased).",
+    "TJ lines need their value's first character removed entirely.",
+    "TK lines need a question mark appended to their value.",
+    "TL lines need a \"# \" prefix.",
+    "TM lines need \"_m\" appended to their value.",
+    "TN lines need \"_n\" appended to their value.",
+    "TO lines need their value's first character replaced with Z.",
+    "TP lines need \"_p\" appended to their value.",
+    "Clear the tag from every line once its fix is applied, wherever that tag appears."
   ],
   "prerequisites": [
     "fix-them-all"

@@ -24,7 +24,15 @@
     "vim-sort-command"
   ],
   "objective": [
-    "Eight different tags need eight different fixes.",
+    "T1 lines need \"-x\" appended to their value.",
+    "T2 lines need \"-y\" appended to their value.",
+    "T3 lines need their value shouted (uppercased).",
+    "T4 lines need indenting.",
+    "T5 lines need their value's first character replaced with Q.",
+    "T6 lines need duplicating.",
+    "T7 lines need a \"> \" prefix.",
+    "T8 lines need \"_end\" appended to their value.",
+    "Strip the tag from every line once its fix is applied, wherever that tag appears.",
     "Once every line is fixed, put the whole file in order."
   ],
   "prerequisites": [

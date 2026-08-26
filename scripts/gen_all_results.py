@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
-"""Regenerates all_results.md from exercises/*.json, then scrubs
+"""Regenerates private/all_results.md from exercises/*.json, then scrubs
 `ideal_keystrokes` out of every professional/genius exercises/*.json file
 it just archived — those two tiers' solutions are meant to exist *only*
-in all_results.md, never in the file the live app actually loads (see
-server/nvim_session.py: NvimSession works fine with par set and
+in private/all_results.md, never in the file the live app actually loads
+(see server/nvim_session.py: NvimSession works fine with par set and
 ideal_keystrokes absent — it just skips live per-keystroke hit/miss
 feedback, which would otherwise leak the hidden solution one correct
 keystroke at a time). Run this after authoring or redesigning any
 exercise, public or private.
 
-Why a separate vault (private_solutions.json), not just exercises/*.json:
-after the first run scrubs a professional/genius exercise, its JSON file
-no longer has ideal_keystrokes to archive — a naive "regenerate from
-exercises/*.json" on a *second* run would find nothing there and
-overwrite that exercise's already-correct all_results.md entry with "no
-fixed reference path", permanently losing it. The vault is where a
-professional/genius solution is captured (the moment it's still present
-in the live JSON, right before scrubbing) and stays put afterward,
-untouched by anything scrubbing the live files. Both private_solutions.json
-and all_results.md are gitignored.
+Why a separate vault (private/private_solutions.json), not just
+exercises/*.json: after the first run scrubs a professional/genius
+exercise, its JSON file no longer has ideal_keystrokes to archive — a
+naive "regenerate from exercises/*.json" on a *second* run would find
+nothing there and overwrite that exercise's already-correct
+all_results.md entry with "no fixed reference path", permanently losing
+it. The vault is where a professional/genius solution is captured (the
+moment it's still present in the live JSON, right before scrubbing) and
+stays put afterward, untouched by anything scrubbing the live files. The
+whole `private/` directory is gitignored.
 
 Usage: python scripts/gen_all_results.py
 """
@@ -29,7 +29,8 @@ import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EXERCISES_DIR = os.path.join(REPO_ROOT, "exercises")
-VAULT_PATH = os.path.join(REPO_ROOT, "private_solutions.json")
+PRIVATE_DIR = os.path.join(REPO_ROOT, "private")
+VAULT_PATH = os.path.join(PRIVATE_DIR, "private_solutions.json")
 sys.path.insert(0, os.path.join(REPO_ROOT, "server"))
 
 from exercises import list_exercises, load_exercise, DIFFICULTY_TIERS  # noqa: E402
@@ -54,6 +55,7 @@ def load_vault():
 
 
 def save_vault(vault):
+    os.makedirs(PRIVATE_DIR, exist_ok=True)
     with open(VAULT_PATH, "w", encoding="utf-8") as f:
         json.dump(vault, f, indent=2, ensure_ascii=False, sort_keys=True)
         f.write("\n")
@@ -83,8 +85,8 @@ def main():
         "",
         "Every exercise's reference solution. Public tiers are generated "
         "fresh from `exercises/*.json` every run; professional/genius come "
-        "from `private_solutions.json` (see this script's docstring for "
-        "why). Regenerate with `scripts/gen_all_results.py` after any "
+        "from `private/private_solutions.json` (see this script's docstring "
+        "for why). Regenerate with `scripts/gen_all_results.py` after any "
         "exercise content change.",
         "",
         "**Public tiers** (apprentice/beginner/intermediate/advanced) already "
@@ -96,7 +98,8 @@ def main():
         "even to the live game session itself (`ideal_keystrokes` isn't "
         "stored in these two tiers' `exercises/*.json` at all — this file "
         "and `private_solutions.json` are the only place the answers exist "
-        "in full). Both are in `.gitignore` and never committed.",
+        "in full). The whole `private/` directory is in `.gitignore` and "
+        "never committed.",
         "",
     ]
 
@@ -127,7 +130,8 @@ def main():
                     lines.append("- no fixed reference path")
             lines.append("")
 
-    out_path = os.path.join(REPO_ROOT, "all_results.md")
+    out_path = os.path.join(PRIVATE_DIR, "all_results.md")
+    os.makedirs(PRIVATE_DIR, exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines).rstrip() + "\n")
     print(f"wrote {out_path}: {sum(len(v) for v in by_tier.values())} exercises")

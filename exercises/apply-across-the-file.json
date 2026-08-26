@@ -23,8 +23,14 @@
     "vim-normal-over-range"
   ],
   "objective": [
-    "Seven different tags need seven different fixes, each applied everywhere that tag appears.",
-    "Strip the tag and apply the right treatment for each kind."
+    "TAG1 lines need an exclamation mark appended to their value.",
+    "TAG2 lines need a \"* \" prefix.",
+    "TAG3 lines need their value shouted (uppercased).",
+    "TAG4 lines need indenting.",
+    "TAG5 lines need their value replaced outright with the word FIXED.",
+    "TAG6 lines need their value's first character replaced with X.",
+    "TAG7 lines need duplicating.",
+    "Strip the tag from every line once its fix is applied, wherever that tag appears in the file."
   ],
   "prerequisites": [
     "fix-them-all"
