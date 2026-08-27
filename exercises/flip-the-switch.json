@@ -1,0 +1,30 @@
+{
+  "id": "flip-the-switch",
+  "title": "Flip the Switch",
+  "description": "Learn how to flip the case of a character, and of a whole run of them at once.",
+  "par": 15,
+  "ideal_keystrokes": "ww~j0ww4~j0ww6~",
+  "workspace": {
+    "flags.txt": "flag1: On\nflag2: TRUE\nflag3: ONLINE\n"
+  },
+  "open_file": "flags.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "flag1: on\nflag2: true\nflag3: online\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-toggle-case-character",
+    "vim-counts"
+  ],
+  "objective": [
+    "Every flag's value has the wrong case.",
+    "Some need just one character flipped; others need the whole value flipped at once."
+  ]
+}

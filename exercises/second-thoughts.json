@@ -1,0 +1,29 @@
+{
+  "id": "second-thoughts",
+  "title": "Second Thoughts",
+  "description": "Learn how to erase what you just typed without leaving insert mode.",
+  "par": 80,
+  "ideal_keystrokes": "ihelllo\u0017hello\u001boToday I went too the wrong store\u0015Today I went to the right store\u001b",
+  "workspace": {
+    "note.txt": "\n"
+  },
+  "open_file": "note.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "hello\nToday I went to the right store\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-insert-mode-editing"
+  ],
+  "objective": [
+    "Fix the typo without leaving insert mode — erase just the last word you typed and retype it.",
+    "Then scrap the whole line you just started and write the correct one instead, still without leaving insert mode."
+  ]
+}

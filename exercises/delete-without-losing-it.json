@@ -1,0 +1,29 @@
+{
+  "id": "delete-without-losing-it",
+  "title": "Delete Without Losing It",
+  "description": "Learn how to delete something without it overwriting what you're about to paste.",
+  "par": 29,
+  "ideal_keystrokes": "yy2G\"_ddPjyy4G\"_ddPjyy6G\"_ddP",
+  "workspace": {
+    "f.txt": "keep-A\ndelete-me-1\nkeep-B\ndelete-me-2\nkeep-C\ndelete-me-3\n"
+  },
+  "open_file": "f.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "keep-A\nkeep-A\nkeep-B\nkeep-B\nkeep-C\nkeep-C\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-black-hole-register"
+  ],
+  "objective": [
+    "Each 'keep' line needs to be duplicated right after itself.",
+    "Each 'delete-me' line needs to go away first — without it clobbering the copy you're about to paste."
+  ]
+}

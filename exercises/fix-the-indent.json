@@ -1,0 +1,29 @@
+{
+  "id": "fix-the-indent",
+  "title": "Fix the Indent",
+  "description": "Learn how to let Vim reindent a line to match its block, instead of counting spaces by hand.",
+  "par": 12,
+  "ideal_keystrokes": "==jjj==jjj==",
+  "workspace": {
+    "script.py": "if flag:\n    x = 1\ny = 2\nif other:\n    z = 3\nw = 4\nif third:\n    p = 5\nq = 6\n"
+  },
+  "open_file": "script.py",
+  "success": {
+    "type": "buffer_match",
+    "content": "if flag:\n    x = 1\n    y = 2\nif other:\n    z = 3\n    w = 4\nif third:\n    p = 5\n    q = 6\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 3,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-reindent"
+  ],
+  "objective": [
+    "Three separate lines don't match the indent of the block they're in.",
+    "Let Vim correct each one instead of counting spaces by hand."
+  ]
+}

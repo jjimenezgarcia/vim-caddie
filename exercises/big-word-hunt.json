@@ -1,0 +1,29 @@
+{
+  "id": "big-word-hunt",
+  "title": "Big Word Hunt",
+  "description": "Learn how to jump by whitespace-delimited WORDS instead of stopping at every bit of punctuation.",
+  "par": 1,
+  "ideal_keystrokes": "W",
+  "workspace": {
+    "url.txt": "visit user@host:8080/path now\n"
+  },
+  "open_file": "url.txt",
+  "success": {
+    "type": "cursor_at",
+    "line": 1,
+    "col": 7
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-big-word-motions"
+  ],
+  "objective": [
+    "Reach the start of the glued-together block in a single motion — punctuation doesn't split it, only whitespace does."
+  ]
+}

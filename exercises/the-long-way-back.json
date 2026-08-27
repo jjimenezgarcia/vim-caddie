@@ -1,0 +1,29 @@
+{
+  "id": "the-long-way-back",
+  "title": "The Long Way Back",
+  "description": "Learn how to jump back through the positions you've jumped from, one hop at a time.",
+  "par": 27,
+  "ideal_keystrokes": "GA-c\u001b6GA-b\u001b4GA-a\u001b\u000f\u000f\u000fA-home\u001b",
+  "workspace": {
+    "f.txt": "home\nfiller\nfiller\ntarget-a\nfiller\ntarget-b\nfiller\ntarget-c\n"
+  },
+  "open_file": "f.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "home-home\nfiller\nfiller\ntarget-a-a\nfiller\ntarget-b-b\nfiller\ntarget-c-c\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-jumplist"
+  ],
+  "objective": [
+    "Jump to each target in turn, fixing it as you land.",
+    "Once every target is fixed, walk all the way back through your own jumps instead of navigating there by hand — then fix home too."
+  ]
+}

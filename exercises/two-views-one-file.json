@@ -1,0 +1,29 @@
+{
+  "id": "two-views-one-file",
+  "title": "Two Views, One File",
+  "description": "Learn how to split the window and edit the same file from two views at once.",
+  "par": 28,
+  "ideal_keystrokes": ":split\rGA - fixed\u001b\u0017wA - too\u001b",
+  "workspace": {
+    "todo.txt": "buy milk\nbuy eggs\nbuy bread\n"
+  },
+  "open_file": "todo.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "buy milk - too\nbuy eggs\nbuy bread - fixed\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-windows"
+  ],
+  "objective": [
+    "Split the window, then fix the last line from the new split.",
+    "Switch to the other window and fix the first line from there — same file, same buffer, two views."
+  ]
+}

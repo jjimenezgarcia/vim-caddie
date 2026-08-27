@@ -1,0 +1,29 @@
+{
+  "id": "reorder-with-commands",
+  "title": "Reorder with Commands",
+  "description": "Learn how to copy and move lines with an Ex command instead of yanking and pasting by hand.",
+  "par": 40,
+  "ideal_keystrokes": ":1t$\r:1m$\r:1m$\r:1m$\r:1m$\r:1m$\r:1m$\r:1m$\r",
+  "workspace": {
+    "f.txt": "alpha\nbeta\ngamma\ndelta\n"
+  },
+  "open_file": "f.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "gamma\ndelta\nalpha\nalpha\nbeta\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-copy-move-lines"
+  ],
+  "objective": [
+    "Copy the first line to the end of the file as an extra marker.",
+    "Then keep moving whatever's now the first line to the end, one command at a time, until the file lands in this exact order."
+  ]
+}

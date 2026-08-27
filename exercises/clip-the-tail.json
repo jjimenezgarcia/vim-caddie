@@ -1,0 +1,34 @@
+{
+  "id": "clip-the-tail",
+  "title": "Clip the Tail",
+  "description": "Learn how to jump straight to an unwanted marker and cut everything after it.",
+  "par": 13,
+  "ideal_keystrokes": "f;Dj0f#Dj0f,D",
+  "workspace": {
+    "tails.txt": "note1;drop-this\nnote2#drop-this\nnote3,drop-this\n"
+  },
+  "open_file": "tails.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "note1\nnote2\nnote3\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-find-char-motions",
+    "vim-end-of-line-operators"
+  ],
+  "objective": [
+    "Each line has something extra tacked on after a marker character.",
+    "Jump straight to that marker, then cut everything from there to the end of the line.",
+    "The marker is different every time — read the line to find it."
+  ],
+  "prerequisites": [
+    "cut-it-short"
+  ]
+}

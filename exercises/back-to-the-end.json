@@ -1,0 +1,29 @@
+{
+  "id": "back-to-the-end",
+  "title": "Back to the End",
+  "description": "Learn how to jump backward to the end of the previous word.",
+  "par": 2,
+  "ideal_keystrokes": "ge",
+  "workspace": {
+    "words.txt": "quick brown fox\n"
+  },
+  "open_file": "words.txt",
+  "success": {
+    "type": "cursor_at",
+    "line": 1,
+    "col": 11
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 13
+  },
+  "related_theory": [
+    "vim-word-end-backward"
+  ],
+  "objective": [
+    "Jump backward, landing on the last character of the previous word — not its start."
+  ]
+}

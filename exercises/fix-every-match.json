@@ -1,0 +1,30 @@
+{
+  "id": "fix-every-match",
+  "title": "Fix Every Match",
+  "description": "Learn how to change the next search match and repeat that exact fix on the one after it.",
+  "par": 43,
+  "ideal_keystrokes": "/todo\rcgndone\u001b../TBD\rcgnfixed\u001b./xxx\rcgnyyy\u001b",
+  "workspace": {
+    "f.txt": "please fix: todo todo todo\nalso: TBD TBD\nand: xxx\n"
+  },
+  "open_file": "f.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "please fix: done done done\nalso: fixed fixed\nand: yyy\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-gn-motion"
+  ],
+  "objective": [
+    "Every 'todo' needs to become 'done' — fix the first match, then repeat that exact fix on the rest without re-selecting anything.",
+    "Same idea for 'TBD' becoming 'fixed'.",
+    "The stray 'xxx' needs fixing too."
+  ]
+}
