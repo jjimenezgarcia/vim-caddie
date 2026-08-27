@@ -207,7 +207,15 @@ to run again later without losing anything already archived.
   genuinely different, or did two sections just repeat the same trick
   with different words in the workspace text?
 - If it's professional or genius, run `scripts/gen_all_results.py`
-  before considering it finished.
+  before considering it finished — the PR check below fails if you skip
+  this (see next bullet), but do it before pushing, not after.
+- Every PR runs `scripts/verify_all_exercises.py` in CI
+  (`.github/workflows/verify-exercises.yml`) — the same real-Neovim check
+  as `verify_exercise.py`, run over every public exercise, plus a check
+  that no professional/genius exercise still has `ideal_keystrokes` sitting
+  in `exercises/*.json` unscrubbed. It's the safety net, not the primary
+  check — verify locally first; don't rely on CI to find a broken
+  exercise for you.
 - If you added a `prerequisites` entry, sanity-check it isn't a harder
   tier than the exercise itself (`python3 -c` one-liner, run from the
   repo root):

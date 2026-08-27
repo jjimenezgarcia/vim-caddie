@@ -1,0 +1,29 @@
+name: Verify exercises
+
+# Confirms every public exercise's ideal_keystrokes actually produces its
+# claimed success state against a real headless Neovim. See scripts/verify_all_exercises.py
+# for exactly what this does and doesn't check (professional/genius
+# exercises are skipped, not verified — their solutions are private).
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Neovim
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends neovim
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: pip install -r server/requirements.txt
+
+      - name: Verify every public exercise solves for real
+        run: python scripts/verify_all_exercises.py
