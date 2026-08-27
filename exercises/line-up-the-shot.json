@@ -1,0 +1,29 @@
+{
+  "id": "line-up-the-shot",
+  "title": "Line Up the Shot",
+  "description": "Learn how to jump straight to a specific character on the line, without counting columns.",
+  "par": 2,
+  "ideal_keystrokes": "fX",
+  "workspace": {
+    "shot.txt": "-------------X-------------\n"
+  },
+  "open_file": "shot.txt",
+  "success": {
+    "type": "cursor_at",
+    "line": 1,
+    "col": 14
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-find-char-motions"
+  ],
+  "objective": [
+    "Reach the marked spot in a single motion — don't step your way there one column at a time."
+  ]
+}

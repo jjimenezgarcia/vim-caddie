@@ -1,0 +1,30 @@
+{
+  "id": "build-the-macro-up",
+  "title": "Build the Macro Up",
+  "description": "Learn how to extend a recorded macro in stages instead of re-recording it from scratch.",
+  "par": 43,
+  "ideal_keystrokes": "qadwqj0qAA-done\u001bqj0qA~qj0@aj0@aj0@aj0@aj0@a",
+  "workspace": {
+    "f.txt": "junk one\njunk two\njunk three\njunk four\njunk five\njunk six\njunk seven\njunk eight\n"
+  },
+  "open_file": "f.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "one\njunk two-done\nJunk three\nfour-donE\nfive-donE\nsix-donE\nseven-donE\neight-donE\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-macro-append"
+  ],
+  "objective": [
+    "Record a macro that strips the leading junk word — check it works on the first line.",
+    "Append a step onto it that also marks the line done — check the combined macro on the next line.",
+    "Append one more step that flips the case of whatever's under the cursor after that — then run the complete macro down the rest of the file."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "the-editor-does-math",
+  "title": "The Editor Does Math",
+  "description": "Learn how to compute a value on the spot and insert the result, without leaving insert mode.",
+  "par": 57,
+  "workspace": {
+    "f.txt": "a: \nb: \nc: \nd: \ne: \n"
+  },
+  "open_file": "f.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "a: 42\nb: 63\nc: 12\nd: 25\ne: 60\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-expression-register"
+  ],
+  "objective": [
+    "Every line needs a computed value filled in, not typed by hand.",
+    "Each one is a different expression — work it out with the editor itself, right where the cursor is."
+  ]
+}

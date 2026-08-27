@@ -1,0 +1,29 @@
+{
+  "id": "the-other-end",
+  "title": "The Other End",
+  "description": "Learn how to extend a visual selection from its start instead of its end.",
+  "par": 11,
+  "ideal_keystrokes": "vlohhcGONE\u001b",
+  "workspace": {
+    "span.txt": "xxKEEPyy\n"
+  },
+  "open_file": "span.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "xxGONEyy\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 5
+  },
+  "related_theory": [
+    "vim-visual-swap-ends"
+  ],
+  "objective": [
+    "Select outward from the middle, then realize you need more on the OTHER side too — without starting the selection over.",
+    "Once it covers the right span, replace it."
+  ]
+}

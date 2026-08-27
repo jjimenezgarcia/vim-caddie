@@ -1,0 +1,29 @@
+{
+  "id": "swap-it-out",
+  "title": "Swap It Out",
+  "description": "Learn the shortcut for deleting a character or a whole line and typing something new right away.",
+  "par": 19,
+  "ideal_keystrokes": "sone\u001bj0Sfixed line\u001b",
+  "workspace": {
+    "swap.txt": "I have 1 apple\nbroken line needs a full rewrite\n"
+  },
+  "open_file": "swap.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "I have one apple\nfixed line\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 8
+  },
+  "related_theory": [
+    "vim-substitute-shorthand"
+  ],
+  "objective": [
+    "The number should be spelled out as a word instead.",
+    "The second line is unsalvageable — replace the whole thing."
+  ]
+}

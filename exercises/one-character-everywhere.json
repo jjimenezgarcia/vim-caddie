@@ -1,0 +1,29 @@
+{
+  "id": "one-character-everywhere",
+  "title": "One Character, Everywhere",
+  "description": "Learn how to replace an entire selection with a single character in one move.",
+  "par": 21,
+  "ideal_keystrokes": "v$rxj0lllllllllllv$rx",
+  "workspace": {
+    "secret.txt": "the password is hunter2\nthe pin is 40921\n"
+  },
+  "open_file": "secret.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "the password is xxxxxxx\nthe pin is xxxxx\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 17
+  },
+  "related_theory": [
+    "vim-visual-replace"
+  ],
+  "objective": [
+    "Select each secret value, to the end of its line.",
+    "Replace every character of it with the same masking character, in one move."
+  ]
+}

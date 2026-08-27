@@ -1,0 +1,30 @@
+{
+  "id": "one-call-does-it-all",
+  "title": "One Call Does It All",
+  "description": "Learn how to write a macro that keeps re-triggering itself down the file, until it runs out of lines.",
+  "par": 57,
+  "workspace": {
+    "f.txt": "TITLE\n3 charlie v1\n1 alpha v1\n2 bravo v1\n"
+  },
+  "open_file": "f.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "TITLE - list\nalpha v2-fixed\nbravo v2-fixed\ncharlie v2-fixed - end of list\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-recursive-macro",
+    "vim-sort-command"
+  ],
+  "objective": [
+    "The title line gets its own one-off fix.",
+    "Every entry below it needs its number stripped, its version bumped, and a 'fixed' marker appended — record that once, and let a single call handle every remaining entry on its own.",
+    "Once they're all fixed, put them in order and mark the last one as the end of the list."
+  ]
+}

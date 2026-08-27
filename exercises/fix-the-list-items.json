@@ -1,0 +1,30 @@
+{
+  "id": "fix-the-list-items",
+  "title": "Fix the List Items",
+  "description": "Learn how to target the contents of a markup tag directly, no matter how deep inside it the cursor sits.",
+  "par": 47,
+  "ideal_keystrokes": "2Gcitright1\u001bjcitright2\u001bjddcitright3\u001bjcitright4\u001b",
+  "workspace": {
+    "page.html": "<ul>\n<li>wrong1</li>\n<li>wrong2</li>\n<li>REMOVE ME</li>\n<li>wrong3</li>\n<li><b>wrong4</b></li>\n</ul>\n"
+  },
+  "open_file": "page.html",
+  "success": {
+    "type": "buffer_match",
+    "content": "<ul>\n<li>right1</li>\n<li>right2</li>\n<li>right3</li>\n<li><b>right4</b></li>\n</ul>\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-tag-text-objects"
+  ],
+  "objective": [
+    "Fix the wrong text inside each list item, leaving the tags themselves alone.",
+    "One whole item doesn't belong — remove it, tags and all.",
+    "The last item's text is nested inside another tag — the fix still has to land on just the innermost content."
+  ]
+}

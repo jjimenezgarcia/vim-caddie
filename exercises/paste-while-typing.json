@@ -1,0 +1,29 @@
+{
+  "id": "paste-while-typing",
+  "title": "Paste While Typing",
+  "description": "Learn how to insert a register's content in the middle of typing, without leaving insert mode.",
+  "par": 25,
+  "ideal_keystrokes": "yiwjj0A\u0012\"\u001bggj0\"ayiwjjA\u0012a\u001b",
+  "workspace": {
+    "f.txt": "TOKEN and more\nOTHERVAL here\nlabel1: \nlabel2: \n"
+  },
+  "open_file": "f.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "TOKEN and more\nOTHERVAL here\nlabel1: TOKEN\nlabel2: OTHERVAL\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-insert-register-paste"
+  ],
+  "objective": [
+    "Yank the first value, then fill in the first label with it — while typing, no trip back to normal mode.",
+    "Yank the second value into a named register, then fill in the second label with that one instead."
+  ]
+}

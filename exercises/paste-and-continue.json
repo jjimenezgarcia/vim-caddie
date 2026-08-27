@@ -1,0 +1,29 @@
+{
+  "id": "paste-and-continue",
+  "title": "Paste and Continue",
+  "description": "Learn how to paste something and land right after it, ready to keep typing.",
+  "par": 12,
+  "ideal_keystrokes": "y$jllllgpi-\u001b",
+  "workspace": {
+    "paste.txt": "red\nstartend\n"
+  },
+  "open_file": "paste.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "red\nstartred-end\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-paste-and-move"
+  ],
+  "objective": [
+    "Yank the first line.",
+    "Paste it into the middle of the second line, then keep typing right where the paste left off — no extra move needed first."
+  ]
+}

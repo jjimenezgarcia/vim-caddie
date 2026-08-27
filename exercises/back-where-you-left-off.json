@@ -1,0 +1,28 @@
+{
+  "id": "back-where-you-left-off",
+  "title": "Back Where You Left Off",
+  "description": "Learn how to resume typing exactly where you last stopped, after moving elsewhere.",
+  "par": 20,
+  "ideal_keystrokes": "Amilk\u001bj$gi and eggs\u001b",
+  "workspace": {
+    "todo.txt": "todo: \nnote: check this\n"
+  },
+  "open_file": "todo.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "todo: milk and eggs\nnote: check this\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 7
+  },
+  "related_theory": [
+    "vim-insert-resume"
+  ],
+  "objective": [
+    "Start the sentence, wander off, then pick up typing exactly where you left off — no navigating back by hand."
+  ]
+}

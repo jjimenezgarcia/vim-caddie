@@ -1,0 +1,29 @@
+{
+  "id": "stitch-without-gaps",
+  "title": "Stitch Without Gaps",
+  "description": "Learn how to join lines together without a space slipping in at the seam.",
+  "par": 10,
+  "ideal_keystrokes": "gJgJjgJjgJ",
+  "workspace": {
+    "paths.txt": "/usr/\nlocal/\nbin\n/opt/\napp\n/var/\nlog\n"
+  },
+  "open_file": "paths.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "/usr/local/bin\n/opt/app\n/var/log\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 1
+  },
+  "related_theory": [
+    "vim-join-without-space"
+  ],
+  "objective": [
+    "Stitch each set of path fragments into one line.",
+    "A regular join would slip a space in and break the path — make sure it doesn't."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "marks-vim-sets-for-you",
+  "title": "Marks Vim Sets for You",
+  "description": "Learn how to jump straight back to your last edit, or to where you were before your last big jump.",
+  "par": 23,
+  "ideal_keystrokes": "diwG`.iFIXED\u001bG``A-back\u001b",
+  "workspace": {
+    "marks.txt": "fix HERE please\nfiller\nfiller\nfiller\nlast line\n"
+  },
+  "open_file": "marks.txt",
+  "success": {
+    "type": "buffer_match",
+    "content": "fix FIXED please-back\nfiller\nfiller\nfiller\nlast line\n"
+  },
+  "permissions": {
+    "commands": []
+  },
+  "cursor_start": {
+    "line": 1,
+    "col": 5
+  },
+  "related_theory": [
+    "vim-automatic-marks"
+  ],
+  "objective": [
+    "Fix the marked word, then jump far away — and jump straight back to exactly where you made that edit.",
+    "Jump away once more, then jump back to where you were right before that jump."
+  ]
+}
